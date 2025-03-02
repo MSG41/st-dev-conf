@@ -57,7 +57,7 @@ const App: React.FC = () => {
           wordt ingezet voor software internationalization, duurzame software,
           en AI-implementaties. Toen ik mijn ervaring bij de gemeente en ons
           project deelde, waren veel mensen enthousiast en toonden ze oprechte
-          interesse en waardering voor {' '}
+          interesse en waardering voor{' '}
           <a href="https://bomen.amsterdam.nl" target="_blank" rel="noreferrer">
             De Bomenkaart
           </a>
