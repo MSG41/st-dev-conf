@@ -1,4 +1,4 @@
-# My React App
+# St-Dev-Conf
 
 This is a React application created for DEVWorld 2025, showcasing technology, innovation, and networking in the tech industry.
 
