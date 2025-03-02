@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './ProgressBar.css';
 
 const ProgressBar = () => {
   const [scrollPercent, setScrollPercent] = useState(0);
