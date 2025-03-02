@@ -110,7 +110,7 @@ function App() {
           Datadog monitoring en loganalyse efficiënter maakt dan alleen Azure.
         </p>
         <p>
-          Daarnaast was de <strong>Future of AI-paneldiscussie</strong> erg
+          Daarnaast was de <strong>Future of AI-panel</strong> presentatie erg
           interessant. De inzichten over vector databases en AI-implementaties in
           bedrijven gaven mij een duidelijker beeld van hoe deze technologieën
           gebruikt kunnen worden. Ook de talk van Bright Data over het scrapen van
