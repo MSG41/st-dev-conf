@@ -10,7 +10,7 @@ To get started with this project, follow these steps:
 
    ```
    git clone <repository-url>
-   cd st-def-conf
+   cd st-dev-conf
    ```
 
 2. **Install dependencies:**
