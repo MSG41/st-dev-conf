@@ -1,7 +1,11 @@
 .container {
-  max-width: 810px;
+  max-width: 710px;
   margin: auto;
 }
+
+/* #root {
+  min-height: 100vh;
+} */
 /* #root {
   max-width: 1280px;
   margin: 0 auto;

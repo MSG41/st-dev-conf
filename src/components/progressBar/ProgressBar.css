@@ -3,13 +3,28 @@
   top: 0;
   left: 0;
   width: 105%;
-  height: 10px;
+  height: 5px;
   background: rgba(255, 255, 255, 0.2);
   z-index: 1000;
 }
 
 .progress-bar {
-  height: 10px;
+  height: 5px;
   width: 0%;
-  background: #00e676;
+  background: linear-gradient(270deg, #57b103, #00c853, #f8e045);
+  background-size: 600% 600%;
+  animation: gradientAnimation 10s ease infinite;
+  border: solid 1px black;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

@@ -119,7 +119,7 @@ function Layout() {
         </Grid>
       </Header>
 
-      <div style={{ padding: '20px' }}>
+      <div style={{ padding: '20px', minHeight: '100vh' }}>
         <Outlet />
       </div>
       <ProgressBar />
