@@ -2,14 +2,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 105%;
+  width: 100%;
   height: 5px;
   background: rgba(255, 255, 255, 0.2);
   z-index: 1000;
 }
 
 .progress-bar {
-  height: 5px;
+  height: 100%;
   width: 0%;
   background: linear-gradient(270deg, #57b103, #00c853, #f8e045);
   background-size: 600% 600%;

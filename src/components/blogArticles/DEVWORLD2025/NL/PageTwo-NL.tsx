@@ -1,7 +1,8 @@
-
 export default function PageTwo() {
   return (
-    <div>(NL Page, devworld2025) work in progress.. 🚧⚙️🏗🚜🛠🔩🧰🪓🪚🗜🧱</div>
+    <div style={{ padding: '20px' }}>
+      <div>(NL Page, devworld2025) work in progress.. 🚧⚙️🏗🚜🛠🔩🧰🪓🪚🗜🧱</div>
+    </div>
     // <div className="container">
     //   <div className="blog-meta">
     //     <div>

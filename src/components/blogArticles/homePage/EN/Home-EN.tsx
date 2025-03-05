@@ -37,7 +37,7 @@ export default function Home() {
               development/engineering because it suits me perfectly: it’s
               fast-paced, creative, impressive, efficient, and you can
               immediately see the results of your hard work. As a self-taught
-              programmer <Mark>—YES, without using AI or ChatGPT—</Mark> {''}I
+              programmer<Mark>—YES, without using AI or ChatGPT—</Mark> {''}I
               mostly learned by thinking for myself, starting projects I came up
               with, and using platforms like Stack Overflow, YouTube, courses,
               and other forums. I enjoy learning from experts and continuously
@@ -64,7 +64,7 @@ export default function Home() {
               truly enjoyable experience to use it in this context.
             </Paragraph>
           </Accordion.Section>
-          <Accordion.Section label="The open source github repository">
+          <Accordion.Section label="This blog as open-source github repository">
             <Paragraph>
               <Link href="https://github.com/MSG41/st-dev-conf">
                 {' '}

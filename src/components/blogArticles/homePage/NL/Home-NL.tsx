@@ -63,7 +63,7 @@ export default function Home() {
               {''} Het is een echt plezier om het in deze context te gebruiken.
             </Paragraph>
           </Accordion.Section>
-          <Accordion.Section label="De open-source GitHub-repository">
+          <Accordion.Section label="Deze blog als open-source GitHub-repository">
             <Paragraph>
               <Link href="https://github.com/MSG41/st-dev-conf">
                 {' '}
