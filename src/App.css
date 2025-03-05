@@ -3,6 +3,10 @@
   margin: auto;
 }
 
+.accordion {
+  margin-top: 1rem;
+}
+
 /* #root {
   min-height: 100vh;
 } */
