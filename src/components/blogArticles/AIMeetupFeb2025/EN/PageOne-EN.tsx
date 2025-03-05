@@ -1,7 +1,7 @@
 export default function PageOne() {
   return (
     <div style={{ padding: '20px' }}>
-      <h1>ENGLISH THE AI MEETUP WAS REALLY COOL !!! </h1>{' '}
+      <div>(EN page, ai meetup) work in progress.. 🚧⚙️🏗🚜🛠🔩🧰🪓🪚🗜🧱</div>
     </div>
   );
 }

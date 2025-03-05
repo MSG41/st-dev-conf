@@ -3,6 +3,7 @@ import {
   Blockquote,
   Grid,
   Link,
+  Mark,
   Paragraph,
   Spotlight,
 } from '@amsterdam/design-system-react';
@@ -36,18 +37,18 @@ export default function Home() {
               development/engineering because it suits me perfectly: it’s
               fast-paced, creative, impressive, efficient, and you can
               immediately see the results of your hard work. As a self-taught
-              programmer—YES, without using AI or ChatGPT—I mostly learned by
-              thinking for myself, starting projects I came up with, and using
-              platforms like Stack Overflow, YouTube, courses, and other forums.
-              I enjoy learning from experts and continuously work on improving
-              my skills. My interests are diverse: I love DIY projects and
-              always try to fix things when they break—my wife sometimes thinks
-              I’m crazy because I never stop until it’s actually fixed. It often
-              takes me a lot of time and energy, but it's a guilty pleasure!
-              Additionally, I enjoy solving mechanical and 3D puzzles,
-              appreciating art in general, cooking, and adrenaline-giving
-              activities. I believe in the power of open source and love sharing
-              my knowledge with others!
+              programmer <Mark>—YES, without using AI or ChatGPT—</Mark> {''}I
+              mostly learned by thinking for myself, starting projects I came up
+              with, and using platforms like Stack Overflow, YouTube, courses,
+              and other forums. I enjoy learning from experts and continuously
+              work on improving my skills. My interests are diverse: I love DIY
+              projects and always try to fix things when they break—my wife
+              sometimes thinks I’m crazy because I never stop until it’s
+              actually fixed. It often takes me a lot of time and energy, but
+              it's a guilty pleasure! Additionally, I enjoy solving mechanical
+              and 3D puzzles, appreciating art in general, cooking, and
+              adrenaline-giving activities. I believe in the power of open
+              source and love sharing my knowledge with others!
             </Paragraph>
           </Accordion.Section>
           <Accordion.Section label="Why a Blog?">
@@ -58,8 +59,9 @@ export default function Home() {
               future, it’s nice to have everything in one place for easy
               reference. Additionally, this blog gives me the perfect
               opportunity to work with the thoughtfully designed Amsterdam
-              Design System— hats off to the talented team behind it! It’s been
-              a truly enjoyable experience to use it in this context.
+              Design System
+              <Mark>—hats off to the talented team behind it!</Mark> It’s been a
+              truly enjoyable experience to use it in this context.
             </Paragraph>
           </Accordion.Section>
           <Accordion.Section label="The open source github repository">
@@ -70,7 +72,7 @@ export default function Home() {
               </Link>
               {''} I know it's not perfect yet, and I will do my best to improve
               it as much as I can. Any suggestions or feedback are always
-              welcome.
+              welcome. ❤️
             </Paragraph>
           </Accordion.Section>
         </Accordion>

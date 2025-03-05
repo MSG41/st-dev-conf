@@ -3,6 +3,7 @@ import {
   Blockquote,
   Grid,
   Link,
+  Mark,
   Paragraph,
   Spotlight,
 } from '@amsterdam/design-system-react';
@@ -35,16 +36,17 @@ export default function Home() {
               maakte ik de overstap naar softwareontwikkeling, omdat het perfect
               bij me past: het is snel, creatief, indrukwekkend, efficiënt en je
               ziet direct de resultaten van je harde werk. Als autodidact heb ik
-              mezelf leren programmeren — JA, zonder AI of ChatGPT — maar vooral
-              door zelf na te denken en projecten voor mezelf te starten, en
-              door gebruik te maken van platforms zoals Stack Overflow, YouTube,
-              cursussen en andere forums. Ik leer graag van experts en blijf
-              mezelf continu ontwikkelen. Mijn interesses zijn breed; ik hou
-              onder andere van klussen en probeer altijd dingen te repareren als
-              ze kapot zijn — mijn vrouw denkt soms dat ik gek ben! Verder hou
-              ik van denkpuzzels, kunst, eten en koken, en adrenaline-gevende
-              activiteiten. Ik geloof in de kracht van open source en deel mijn
-              kennis graag met anderen!
+              mezelf leren programmeren
+              <Mark>— JA, zonder AI of ChatGPT —</Mark>
+              maar vooral door zelf na te denken en projecten voor mezelf te
+              starten, en door gebruik te maken van platforms zoals Stack
+              Overflow, YouTube, cursussen en andere forums. Ik leer graag van
+              experts en blijf mezelf continu ontwikkelen. Mijn interesses zijn
+              breed; ik hou onder andere van klussen en probeer altijd dingen te
+              repareren als ze kapot zijn — mijn vrouw denkt soms dat ik gek
+              ben! Verder hou ik van denkpuzzels, kunst, eten en koken, en
+              adrenaline-gevende activiteiten. Ik geloof in de kracht van open
+              source en deel mijn kennis graag met anderen!
             </Paragraph>
           </Accordion.Section>
           <Accordion.Section label="Waarom deze blog?">
@@ -54,8 +56,11 @@ export default function Home() {
               conferenties op één plek terug te kunnen vinden in een
               persoonlijke omgeving. Daarnaast biedt deze blog me de perfecte
               kans om te werken met het doordacht ontworpen Amsterdam Design
-              System — petje af voor het getalenteerde team achter dit systeem!
-              Het is een echt plezier om het in deze context te gebruiken.
+              System
+              <Mark>
+                —petje af voor het getalenteerde team achter dit systeem!
+              </Mark>
+              {''} Het is een echt plezier om het in deze context te gebruiken.
             </Paragraph>
           </Accordion.Section>
           <Accordion.Section label="De open-source GitHub-repository">
@@ -66,6 +71,7 @@ export default function Home() {
               </Link>{' '}
               Ik weet dat het nog niet perfect is en ik zal mijn best doen om
               het te verbeteren. Alle suggesties en feedback zijn altijd welkom.
+              ❤️
             </Paragraph>
           </Accordion.Section>
         </Accordion>
