@@ -127,8 +127,6 @@ function Layout() {
   );
 }
 
-// Define intensities for 404 error page animated component
-
 const router = createBrowserRouter([
   {
     path: '/',
