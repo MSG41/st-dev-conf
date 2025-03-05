@@ -5,12 +5,12 @@ import {
   useNavigate,
   useLocation,
 } from 'react-router';
-import Home from './Home-NL';
-import PageOne from './PageOne-NL';
-import PageTwo from './PageTwo-NL';
-import HomeEn from './Home-EN';
-import PageOneEn from './PageOne-EN';
-import PageTwoEn from './PageTwo-EN';
+import Home from './components/blogArticles/homePage/NL/Home-NL';
+import PageOne from './components/blogArticles/AIMeetupFeb2025/NL/PageOne-NL';
+import PageTwo from './components/blogArticles/DEVWORLD2025/NL/PageTwo-NL';
+import HomeEn from './components/blogArticles/homePage/EN/Home-EN';
+import PageOneEn from './components/blogArticles/AIMeetupFeb2025/EN/PageOne-EN';
+import PageTwoEn from './components/blogArticles/DEVWORLD2025/EN/PageTwo-EN';
 import {
   Header,
   Grid,
