@@ -29,24 +29,7 @@ export default function Home() {
         <Accordion headingLevel={1}>
           <Accordion.Section label="Wie ben ik?">
             <Paragraph>
-              Ik ben Salim Thaifa, Fullstack Developer bij Gemeente Amsterdam,
-              cluster Digitalisering, Innovatie & Informatie (DII). Ik ben
-              gepassioneerd door creativiteit, technologie en innovatie.
-              Oorspronkelijk ben ik civiel ingenieur, maar vier jaar geleden
-              maakte ik de overstap naar softwareontwikkeling, omdat het perfect
-              bij me past: het is snel, creatief, indrukwekkend, efficiënt en je
-              ziet direct de resultaten van je harde werk. Als autodidact heb ik
-              mezelf leren programmeren
-              <Mark>— JA, zonder AI of ChatGPT —</Mark>
-              maar vooral door zelf na te denken en projecten voor mezelf te
-              starten, en door gebruik te maken van platforms zoals Stack
-              Overflow, YouTube, cursussen en andere forums. Ik leer graag van
-              experts en blijf mezelf continu ontwikkelen. Mijn interesses zijn
-              breed; ik hou onder andere van klussen en probeer altijd dingen te
-              repareren als ze kapot zijn — mijn vrouw denkt soms dat ik gek
-              ben! Verder hou ik van denkpuzzels, kunst, eten en koken, en
-              adrenaline-gevende activiteiten. Ik geloof in de kracht van open
-              source en deel mijn kennis graag met anderen!
+            Ik ben Salim Thaifa, Fullstack Developer bij de Gemeente Amsterdam, met een achtergrond in civiele techniek en een passie voor technologie en softwareontwikkeling. Ik werk graag aan uitdagende projecten en blijf me ontwikkelen in een continu veranderend technologielandschap.
             </Paragraph>
           </Accordion.Section>
           <Accordion.Section label="Waarom deze blog?">

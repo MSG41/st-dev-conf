@@ -29,26 +29,11 @@ export default function Home() {
         <Accordion headingLevel={1}>
           <Accordion.Section label="Who am I?">
             <Paragraph>
-              I am Salim Thaifa, a Fullstack Developer in the Tech department of
-              the Municipality of Amsterdam, within the Digitalization,
-              Innovation & Information (DII) cluster. I am passionate about
-              creativity, technology, and innovation. Originally, I am a civil
-              engineer, but four years ago, I made the switch to software
-              development/engineering because it suits me perfectly: it’s
-              fast-paced, creative, impressive, efficient, and you can
-              immediately see the results of your hard work. As a self-taught
-              programmer<Mark>—YES, without using AI or ChatGPT—</Mark> {''}I
-              mostly learned by thinking for myself, starting projects I came up
-              with, and using platforms like Stack Overflow, YouTube, courses,
-              and other forums. I enjoy learning from experts and continuously
-              work on improving my skills. My interests are diverse: I love DIY
-              projects and always try to fix things when they break—my wife
-              sometimes thinks I’m crazy because I never stop until it’s
-              actually fixed. It often takes me a lot of time and energy, but
-              it's a guilty pleasure! Additionally, I enjoy solving mechanical
-              and 3D puzzles, appreciating art in general, cooking, and
-              adrenaline-giving activities. I believe in the power of open
-              source and love sharing my knowledge with others!
+              I am Salim Thaifa, a Fullstack Developer at the Municipality of
+              Amsterdam, with a background in civil engineering and a passion
+              for technology and software development. I enjoy working on
+              challenging projects and continuously developing myself in an
+              ever-evolving technological landscape.
             </Paragraph>
           </Accordion.Section>
           <Accordion.Section label="Why a Blog?">
