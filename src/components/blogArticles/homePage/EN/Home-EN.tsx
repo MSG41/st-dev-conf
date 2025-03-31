@@ -24,7 +24,6 @@ export default function Home() {
       </Spotlight>
       <SwiperCube />
 
-      {/* Texts */}
       <div className="accordion">
         <Accordion headingLevel={1}>
           <Accordion.Section label="Who am I?">
@@ -57,7 +56,7 @@ export default function Home() {
               </Link>
               {''} I know it's not perfect yet, and I will do my best to improve
               it as much as I can. Any suggestions or feedback are always
-              welcome. ❤️ ❤️
+              welcome. ❤️
             </Paragraph>
           </Accordion.Section>
         </Accordion>
