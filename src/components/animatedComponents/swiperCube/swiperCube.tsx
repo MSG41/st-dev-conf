@@ -23,16 +23,28 @@ const SwiperCube: React.FC = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="/cubeImages/cube1.jpg" alt="Nature 1" />
+          <img
+            src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/cubeImages/cube1-RZnEnfuQ213WLkFc9AkhlP1WKfs8GL.jpg"
+            alt="Nature 1"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/cubeImages/cube2.jpg" alt="Nature 2" />
+          <img
+            src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/cubeImages/cube2-m7HvFF6cPn12EZzHkTG2lI3PQqOfty.jpg"
+            alt="Nature 2"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/cubeImages/cube3.jpg" alt="Nature 3" />
+          <img
+            src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/cubeImages/cube3-87Ok0XYxt9IaLEOuzJdlBxREKlawzB.jpg"
+            alt="Nature 3"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/cubeImages/cube4.jpg" alt="Nature 4" />
+          <img
+            src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/cubeImages/cube4-JetLl6JTUBzhUDq8YQbCM6iYd26S8I.jpg"
+            alt="Nature 4"
+          />
         </SwiperSlide>
       </Swiper>
     </div>
