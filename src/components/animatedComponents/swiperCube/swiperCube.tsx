@@ -1,9 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// I imported all the css bundle in styles. It's working.
 import './styles.css';
-
 import { EffectCube, Pagination } from 'swiper/modules';
 
 const SwiperCube: React.FC = () => {

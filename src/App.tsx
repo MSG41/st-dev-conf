@@ -84,8 +84,8 @@ function Layout() {
   return (
     <div>
       <Header
-      className='navbar'
-        brandName="BLOG - Tech conferences"
+        className="navbar"
+        brandName="Blog - Tech Conferences"
         menuItems={[
           <Header.MenuLink
             key="1"
