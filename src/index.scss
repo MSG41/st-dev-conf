@@ -1,4 +1,6 @@
 @use './styles/media-queries' as media;
+@use '@amsterdam/design-system-tokens/dist/index.css';
+@use '@amsterdam/design-system-tokens/dist/compact.css';
 
 html,
 body,
@@ -81,9 +83,6 @@ body,
 .ams-grid--padding-vertical--medium {
   padding: 1rem;
 }
-
-
-
 
 //
 //Position of the Menu Button
