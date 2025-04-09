@@ -21,7 +21,8 @@ body,
   width: 100%;
 }
 
-[class*='logo'] {
+//Hide Logo GEM AMS
+.ams-logo {
   opacity: 0;
   cursor: pointer;
   position: relative;
@@ -29,6 +30,7 @@ body,
   pointer-events: auto;
 }
 
+// Brand Name
 .ams-header__brand-name {
   position: absolute;
   left: 50%;
@@ -40,23 +42,36 @@ body,
   margin: 0;
 }
 
-// Color Mega Menu Content -> White
-.ams-heading {
+// TV NOISE EFFECT on Brand Name and Heading in menu.
+.ams-heading,
+.ams-header__brand-name {
   color: white;
   font-size: 1.25rem;
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-  animation: glow 3s ease-in-out infinite alternate;
+  animation: tv-noise 4s ease-in-out infinite;
 }
 
-@keyframes glow {
-  from {
-    text-shadow: 0 0 0px rgba(255, 255, 255, 0.1);
+@keyframes tv-noise {
+  0%, 3.8%, 100% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   }
-  to {
-    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+  1% {
+    text-shadow: 3px 1px #ff0000, -3px 0px #00ffff;
+    opacity: 0.9;
   }
+  2% {
+    text-shadow: 3px 0px #00ff00, -3px -1px #ff00ff;
+    opacity: 0.9;
+  }
+  // 5% {
+  //   text-shadow: -2px 0px #ffffff, 2px 0px #0000ff;
+  //   opacity: 0.9;
+  // }
+  // 5% {
+  //   text-shadow: -1px 0px #00ffff, 1px 0px #ff0000;
+  //   opacity: 0.9;
+  // }
 }
-
 .ams-header__mega-menu-button,
 .ams-link-list__link,
 .ams-header {

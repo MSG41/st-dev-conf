@@ -38,7 +38,7 @@ function ConferenceLinks() {
 
   return (
     <Grid.Cell span={4}>
-      <Heading>Conferences & Meetups</Heading>
+      <Heading level={2}>Conferences & Meetups</Heading>
       <LinkList>
         <LinkList.Link
           href="#"
