@@ -8,14 +8,15 @@ import {
   Spotlight,
 } from '@amsterdam/design-system-react';
 import SwiperCube from '../../../animatedComponents/swiperCube/swiperCube';
+import styles from '../../../../App.module.scss';
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <Spotlight color="blue">
         <Grid paddingVertical="medium">
           <Grid.Cell span="all">
-            <Blockquote inverseColor>
+            <Blockquote className={styles.customBlockquote}>
               📝 In this blog, I share my experiences and insights about the
               meetups and conferences I have attended. 💡
             </Blockquote>
@@ -24,7 +25,7 @@ export default function Home() {
       </Spotlight>
       <SwiperCube />
 
-      <div className="accordion">
+      <div className={styles.accordion}>
         <Accordion headingLevel={1}>
           <Accordion.Section label="Who am I?">
             <Paragraph>

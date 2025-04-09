@@ -18,14 +18,12 @@ import {
   Heading,
 } from '@amsterdam/design-system-react';
 import { useCallback } from 'react';
-import ProgressBar from './components/progressBar/ProgressBar';
-import './App.css';
+import styles from './App.module.scss';
 import ErrorPage from './components/animatedComponents/404/errorPage';
 
 function ConferenceLinks() {
   const navigate = useNavigate();
   const location = useLocation();
-
   const isEnglish = location.pathname.startsWith('/en');
 
   const goToPageOne = useCallback(
@@ -40,9 +38,7 @@ function ConferenceLinks() {
 
   return (
     <Grid.Cell span={4}>
-      <Heading className="ams-mb--sm" level={2} size="level-3">
-        Conferences & Meetups
-      </Heading>
+      <Heading>Conferences & Meetups</Heading>
       <LinkList>
         <LinkList.Link
           href="#"
@@ -60,7 +56,7 @@ function ConferenceLinks() {
             goToPageTwo();
           }}
         >
-          DEVWORLD 2025
+          DEVWORLD 2025, Amsterdam
         </LinkList.Link>
       </LinkList>
     </Grid.Cell>
@@ -70,7 +66,6 @@ function ConferenceLinks() {
 function Layout() {
   const navigate = useNavigate();
   const location = useLocation();
-
   const isEnglish = location.pathname.startsWith('/en');
 
   const handleTranslate = () => {
@@ -82,20 +77,12 @@ function Layout() {
   };
 
   return (
-    <div>
+    <div className={styles.appWrapper}>
       <Header
-        className="navbar"
+        className={`${styles.navbar} ${styles.fixedHeader}`}
         brandName="Blog - Tech Conferences"
         menuItems={[
-          <Header.MenuLink
-            key="1"
-            href="#"
-            lang="en"
-            onClick={(e) => {
-              e.preventDefault();
-              handleTranslate();
-            }}
-          >
+          <Header.MenuLink key="1" href="#" lang="en">
             {isEnglish ? 'Terug naar Nederlands' : 'Translate to English'}
           </Header.MenuLink>,
         ]}
@@ -115,15 +102,12 @@ function Layout() {
               </LinkList.Link>
             </LinkList>
           </Header.GridCellNarrowWindowOnly>
-
           <ConferenceLinks />
         </Grid>
       </Header>
-
-      <div style={{ padding: '20px', minHeight: '100vh' }}>
+      <div className={`scrollContainer ${styles.scrollContainer}`}>
         <Outlet />
       </div>
-      <ProgressBar />
     </div>
   );
 }
@@ -136,14 +120,10 @@ const router = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: '/ai-meetup', element: <PageOne /> },
       { path: '/devworld2025', element: <PageTwo /> },
-
       { path: '/en', element: <HomeEn /> },
       { path: '/en/ai-meetup', element: <PageOneEn /> },
       { path: '/en/devworld2025', element: <PageTwoEn /> },
-      {
-        path: '*',
-        element: <ErrorPage />,
-      },
+      { path: '*', element: <ErrorPage /> },
     ],
   },
 ]);

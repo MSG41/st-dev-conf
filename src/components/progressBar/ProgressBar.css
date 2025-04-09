@@ -5,16 +5,30 @@
   width: 100%;
   height: 5px;
   background: rgba(255, 255, 255, 0.2);
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .progress-bar {
   height: 100%;
-  width: 0%;
-  background: linear-gradient(270deg, #57b103, #00c853, #f8e045);
+  width: 0;
+  background: linear-gradient(270deg, #57b1034b, #00c8536d, #f8e0454a);
   background-size: 600% 600%;
   animation: gradientAnimation 10s ease infinite;
   border: solid 1px black;
+}
+
+.progress-image {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url('/output2.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -25px; 
+  transition: left 0.1s ease-out;
+  z-index: 1001;
+  pointer-events: none;
 }
 
 @keyframes gradientAnimation {
@@ -27,4 +41,13 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+.progress-gif {
+  position: absolute;
+  height: 40px; 
+  width: 40px; 
+  top: 100%;
+  transform: translate(-50%, -50%);
+  transition: left 0.1s ease;
 }

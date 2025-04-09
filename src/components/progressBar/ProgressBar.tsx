@@ -3,25 +3,47 @@ import './ProgressBar.css';
 
 const ProgressBar: React.FC = () => {
   useEffect(() => {
+    const container = document.querySelector('.scrollContainer');
+
     const updateProgressBar = () => {
-      const progressBar = document.querySelector(
-        '.progress-bar'
-      ) as HTMLElement;
-      const scrollTop = window.scrollY;
-      const docHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercent = (scrollTop / docHeight) * 100;
-      progressBar.style.width = `${scrollPercent}%`;
+      const progressBar = document.querySelector('.progress-bar') as HTMLElement;
+      const progressGif = document.querySelector('.progress-gif') as HTMLElement;
+      if (!progressBar || !progressGif) return;
+
+      let scrollTop: number, clientHeight: number, scrollHeight: number;
+      if (container) {
+        const scrollEl = container as HTMLElement;
+        scrollTop = scrollEl.scrollTop;
+        clientHeight = scrollEl.clientHeight;
+        scrollHeight = scrollEl.scrollHeight;
+      } else {
+        scrollTop = window.scrollY;
+        clientHeight = window.innerHeight;
+        scrollHeight = document.documentElement.scrollHeight;
+      }
+
+      const maxScroll = scrollHeight - clientHeight;
+      const percentage = maxScroll ? (scrollTop / maxScroll) * 100 : 0;
+      progressBar.style.width = `${percentage}%`;
+      
+      progressGif.style.left = `${percentage}%`;
     };
 
-    window.addEventListener('scroll', updateProgressBar);
+    if (container) {
+      container.addEventListener('scroll', updateProgressBar);
+    } else {
+      window.addEventListener('scroll', updateProgressBar);
+    }
     window.addEventListener('resize', updateProgressBar);
 
-    // Initial update to fix some issues with mobile browsers with a thick or dynamic url bar..
     updateProgressBar();
 
     return () => {
-      window.removeEventListener('scroll', updateProgressBar);
+      if (container) {
+        container.removeEventListener('scroll', updateProgressBar);
+      } else {
+        window.removeEventListener('scroll', updateProgressBar);
+      }
       window.removeEventListener('resize', updateProgressBar);
     };
   }, []);
@@ -29,6 +51,7 @@ const ProgressBar: React.FC = () => {
   return (
     <div className="progress-container">
       <div className="progress-bar"></div>
+      <img src="/output2.gif" alt="Progress animation" className="progress-gif" />
     </div>
   );
 };

@@ -1,0 +1,72 @@
+@use './styles/media-queries' as media;
+
+.appWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.scrollContainer {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: calc(var(--vh, 1vh) * 100 - 3rem);
+  background-color: transparent;
+}
+
+.container {
+  position: relative;
+  top: 0;
+  width: 100%;
+  max-width: 720px;
+  margin: 5rem auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.accordion {
+  margin-top: 2rem;
+}
+
+.contentContainer {
+  padding: 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(39, 68, 83);
+  z-index: 2000;
+  filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.5));
+  clip-path: ellipse(100% 100% at 50% 0%);
+  box-sizing: border-box;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 1.5rem;
+    top: -0.7rem;
+    width: 80px;
+    height: 80px;
+    background-image: url('../public/output2.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1000;
+    cursor: pointer;
+    pointer-events: auto;
+
+    @include media.desktop {
+      left: 2rem;
+      top: -1.5rem;
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+ 
+}

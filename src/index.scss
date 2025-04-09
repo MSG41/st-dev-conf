@@ -1,0 +1,106 @@
+@use './styles/media-queries' as media;
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.ams-header {
+  position: relative;
+  width: 100%;
+}
+
+[class*='logo'] {
+  opacity: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 9000;
+  pointer-events: auto;
+}
+
+.ams-header__brand-name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 0.25rem;
+  padding-left: 0;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+// Color Mega Menu Content -> White
+.ams-heading {
+  color: white;
+  font-size: 1.25rem;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 0px rgba(255, 255, 255, 0.1);
+  }
+  to {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.ams-header__mega-menu-button,
+.ams-link-list__link,
+.ams-header {
+  color: white;
+  &:hover {
+    color: white;
+    font-weight: 600;
+  }
+}
+
+//Color and FontSize Spotlight
+.ams-blockquote {
+  color: white;
+  font-size: 1.25rem;
+}
+
+//Background & Border Radius Spotlight
+.ams-spotlight--blue {
+  background-color: rgb(120, 187, 228);
+  border-radius: 20px;
+}
+
+// Padding Spotlight
+.ams-grid--padding-vertical--medium {
+  padding: 1rem;
+}
+
+
+
+
+//
+//Position of the Menu Button
+// .ams-header__menu-dropdown {
+//   margin: 0 auto;
+//   padding-top: 1rem;
+// }
+
+// Position of the Menu Button
+// .ams-header__menu {
+//   position: absolute;
+//   right: 1rem;
+//   top: 0;
+//   padding-top: 0.75rem;
+
+//   @include media.desktop {
+//     right: 1rem;
+//     padding-top: 1rem;
+//   }
+// }

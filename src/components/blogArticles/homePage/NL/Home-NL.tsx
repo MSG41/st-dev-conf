@@ -8,14 +8,15 @@ import {
   Spotlight,
 } from '@amsterdam/design-system-react';
 import SwiperCube from '../../../animatedComponents/swiperCube/swiperCube';
+import styles from '../../../../App.module.scss';
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <Spotlight color="blue">
         <Grid paddingVertical="medium">
           <Grid.Cell span="all">
-            <Blockquote inverseColor>
+            <Blockquote className={styles.customBlockquote}>
               📝 In deze blog deel ik mijn ervaringen en inzichten van de
               meetups en conferenties die ik bijgewoond heb. 💡
             </Blockquote>
@@ -25,11 +26,15 @@ export default function Home() {
       <SwiperCube />
 
       {/* TEKSTEN */}
-      <div className="accordion">
+      <div className={styles.accordion}>
         <Accordion headingLevel={1}>
           <Accordion.Section label="Wie ben ik?">
             <Paragraph>
-            Ik ben Salim Thaifa, Fullstack Developer bij de Gemeente Amsterdam, met een achtergrond in civiele techniek en een passie voor technologie en softwareontwikkeling. Ik werk graag aan uitdagende projecten en blijf me ontwikkelen in een continu veranderend technologielandschap.
+              Ik ben Salim Thaifa, Fullstack Developer bij de Gemeente
+              Amsterdam, met een achtergrond in civiele techniek en een passie
+              voor technologie en softwareontwikkeling. Ik werk graag aan
+              uitdagende projecten en blijf me ontwikkelen in een continu
+              veranderend technologielandschap.
             </Paragraph>
           </Accordion.Section>
           <Accordion.Section label="Waarom deze blog?">
