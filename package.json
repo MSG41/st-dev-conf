@@ -17,7 +17,7 @@
     "@amsterdam/design-system-tokens": "^0.14.0",
     "@vercel/blob": "^0.27.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react-dom": "^19.1.0",
     "react-router": "^7.5.0",
     "swiper": "^11.2.6"
   },
@@ -25,7 +25,7 @@
     "@eslint/js": "^9.24.0",
     "@types/node": "^22.13.9",
     "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
+    "@types/react-dom": "^19.1.2",
     "@types/swiper": "^6.0.0",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.24.0",
