@@ -47,7 +47,7 @@ export default function PageOne() {
 <Card>
   <Image
     alt=""
-    aspectRatio="square"
+    aspectRatio="16:9"
     src="https://picsum.photos/480/360"
   />
   <Card.HeadingGroup tagline="Nieuws">
