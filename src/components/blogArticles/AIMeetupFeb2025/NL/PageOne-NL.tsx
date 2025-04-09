@@ -26,7 +26,7 @@ export default function PageOne() {
 
 
     
-<div className={styles.contentContainer}>
+<div className={styles.blogContainer}>
 
 
 <Heading level={2}>

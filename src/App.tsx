@@ -20,6 +20,7 @@ import {
 import { useCallback } from 'react';
 import styles from './App.module.scss';
 import ErrorPage from './components/animatedComponents/404/errorPage';
+import Logo from './components/logo/Logo';
 
 function ConferenceLinks() {
   const navigate = useNavigate();
@@ -78,6 +79,10 @@ function Layout() {
 
   return (
     <div className={styles.appWrapper}>
+            <Logo />
+
+            <div className={styles.navbarShadow}></div>
+
       <Header
         className={`${styles.navbar} ${styles.fixedHeader}`}
         brandName="Blog - Tech Conferences"

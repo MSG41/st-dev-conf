@@ -1,6 +1,5 @@
 @use './styles/media-queries' as media;
 
-
 .appWrapper {
   display: flex;
   flex-direction: column;
@@ -11,7 +10,7 @@
   flex: 1;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  height: calc(var(--vh, 1vh) * 100 - 3rem);
+  height: calc(var(--vh, 1vh) * 100);
   background-color: transparent;
 }
 
@@ -34,38 +33,81 @@
   padding: 2rem;
 }
 
+.navbarShadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1999;
+  background-color: transparent;
+  height: 90px;
+  overflow: visible;
+  pointer-events: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110%;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    filter: blur(5px);
+    opacity: 0.6;
+    border-radius: 50%;
+  }
+}
+
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(39, 68, 83);
   z-index: 2000;
-  filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.5));
-  clip-path: ellipse(100% 100% at 50% 0%);
+  background-color: transparent;
   box-sizing: border-box;
 
-  &::before {
+  &::after {
     content: '';
-    display: block;
     position: absolute;
-    left: 1.5rem;
-    top: -0.7rem;
-    width: 80px;
-    height: 80px;
-    background-image: url('/output2.gif');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1000;
-    cursor: pointer;
-    pointer-events: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(39, 68, 83);
+    clip-path: ellipse(100% 100% at 50% 0%);
+    z-index: -1;
+  }
+}
+// Style the page of the blog article here:
+.blogContainer {
+  margin-top: 60px;
+  padding: 2rem;
+  background-color: rgb(91, 119, 133);
+  position: sticky;
+}
 
-    @include media.desktop {
-      left: 2rem;
-      top: -1.5rem;
-      width: 120px;
-      height: 120px;
-    }
+// to place to new logo correctly:
+.logo {
+  display: block;
+  position: fixed;
+  left: 1.5rem;
+  top: -0.7rem;
+  width: 80px;
+  height: 80px;
+  background-image: url('/output2.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 3000; // Higher than navbar
+  cursor: pointer;
+  pointer-events: auto;
+
+  @include media.desktop {
+    left: 2rem;
+    top: -1.5rem;
+    width: 120px;
+    height: 120px;
   }
 }

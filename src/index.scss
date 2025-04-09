@@ -34,7 +34,7 @@ body,
 .ams-header__brand-name {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) translateZ(0); // Combined transform
+  transform: translateX(-50%) translateZ(0); 
   padding-top: 0.25rem;
   padding-left: 0;
   color: white;
@@ -52,7 +52,9 @@ body,
 }
 
 @keyframes tv-noise {
-  0%, 8.3%, 100% {
+  0%,
+  8.3%,
+  100% {
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     opacity: 1;
   }
@@ -67,7 +69,8 @@ body,
 }
 .ams-header__mega-menu-button,
 .ams-link-list__link,
-.ams-header, .ams-header__menu-link {
+.ams-header,
+.ams-header__menu-link {
   color: white;
   &:hover {
     color: white;
@@ -92,22 +95,3 @@ body,
   padding: 1rem;
 }
 
-//
-//Position of the Menu Button
-// .ams-header__menu-dropdown {
-//   margin: 0 auto;
-//   padding-top: 1rem;
-// }
-
-// Position of the Menu Button
-// .ams-header__menu {
-//   position: absolute;
-//   right: 1rem;
-//   top: 0;
-//   padding-top: 0.75rem;
-
-//   @include media.desktop {
-//     right: 1rem;
-//     padding-top: 1rem;
-//   }
-// }
