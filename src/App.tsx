@@ -22,20 +22,30 @@ import styles from './App.module.scss';
 import ErrorPage from './components/animatedComponents/404/errorPage';
 import Logo from './components/logo/Logo';
 
+// A function that closes the menu. It will be used after clicking on menu links. Maybe ADS could implement a better system. Or maybe I didn't discover that yet 😅.
+const closeMenu = () => {
+  const button = document.querySelector(
+    'button.ams-header__mega-menu-button[aria-expanded="true"]'
+  );
+  if (button instanceof HTMLButtonElement) {
+    button.click();
+  }
+};
+
 function ConferenceLinks() {
   const navigate = useNavigate();
   const location = useLocation();
   const isEnglish = location.pathname.startsWith('/en');
 
-  const goToPageOne = useCallback(
-    () => navigate(isEnglish ? '/en/ai-meetup' : '/ai-meetup'),
-    [navigate, isEnglish]
-  );
+  const goToPageOne = useCallback(() => {
+    navigate(isEnglish ? '/en/ai-meetup' : '/ai-meetup');
+    closeMenu();
+  }, [navigate, isEnglish]);
 
-  const goToPageTwo = useCallback(
-    () => navigate(isEnglish ? '/en/devworld2025' : '/devworld2025'),
-    [navigate, isEnglish]
-  );
+  const goToPageTwo = useCallback(() => {
+    navigate(isEnglish ? '/en/devworld2025' : '/devworld2025');
+    closeMenu();
+  }, [navigate, isEnglish]);
 
   return (
     <Grid.Cell span={4}>
@@ -75,14 +85,13 @@ function Layout() {
     } else {
       navigate('/en' + location.pathname);
     }
+    closeMenu();
   };
 
   return (
     <div className={styles.appWrapper}>
       <Logo />
-
       <div className={styles.navbarShadow}></div>
-
       <Header
         className={`${styles.navbar} ${styles.fixedHeader}`}
         brandName="Blog - Tech Conferences"
