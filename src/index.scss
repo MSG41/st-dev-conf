@@ -11,9 +11,9 @@ body,
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  // -webkit-user-select: none;
+  // -moz-user-select: none;
+  // -ms-user-select: none;
 }
 
 //--------------------------------------------------
@@ -26,11 +26,6 @@ body,
   pointer-events: auto;
 }
 //--------------------------------------------------
-
-// .ams-header {
-//   position: relative;
-//   width: 100%;
-// }
 
 // Fix for accordion buttons on mobile
 .ams-accordion__button {
@@ -67,7 +62,7 @@ body,
   color: white;
   font-size: 1.5rem;
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-  animation: tv-noise 6s ease-in-out infinite;
+  animation: tv-noise 30s ease-in-out infinite;
 }
 
 @keyframes tv-noise {
@@ -77,11 +72,11 @@ body,
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     opacity: 1;
   }
-  1.5% {
+  1% {
     text-shadow: 3px 1px #ff0000, -3px 0px #00ffff;
     opacity: 0.9;
   }
-  4.15% {
+  2% {
     text-shadow: 3px 0px #00ff00, -3px -1px #ff00ff;
     opacity: 0.9;
   }
@@ -103,7 +98,9 @@ body,
 .ams-blockquote {
   color: white;
   font-size: 1.2rem;
-  // text-align: center;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
 }
 
 //Background & Border Radius Spotlight
