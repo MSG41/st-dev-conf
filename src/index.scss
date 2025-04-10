@@ -16,16 +16,7 @@ body,
   -ms-user-select: none;
 }
 
-.ams-header {
-  position: relative;
-  width: 100%;
-}
-
-.ams-accordion__button, .ams-paragraph
- {
-  color: white ;
-}
-
+//--------------------------------------------------
 //Hide Logo GEM AMS
 .ams-logo {
   opacity: 0;
@@ -34,8 +25,20 @@ body,
   z-index: 9000;
   pointer-events: auto;
 }
+//--------------------------------------------------
 
-// Brand Name
+// .ams-header {
+//   position: relative;
+//   width: 100%;
+// }
+
+// Text colors
+.ams-accordion__button,
+.ams-paragraph {
+  color: white;
+}
+
+// Brand Name : Blog - Tech Conferences
 .ams-header__brand-name {
   position: absolute;
   left: 50%;
@@ -83,19 +86,23 @@ body,
   }
 }
 
+//--------------------------------------------------
+// Spotlight fixes.
 //Color and FontSize Spotlight
 .ams-blockquote {
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 //Background & Border Radius Spotlight
-.ams-spotlight--blue {
+.ams-spotlight {
+  margin-top: 1rem;
   background-color: rgb(120, 187, 228);
   border-radius: 20px;
 }
 
 // Padding Spotlight
 .ams-grid--padding-vertical--medium {
-  padding: 1rem;
+  padding: 0.75rem;
 }
+//--------------------------------------------------

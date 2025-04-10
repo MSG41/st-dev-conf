@@ -17,8 +17,7 @@ export default function Home() {
         <Grid paddingVertical="medium">
           <Grid.Cell span="all">
             <Blockquote className={styles.customBlockquote}>
-              📝 In this blog, I share my experiences and insights about the
-              meetups and conferences I have attended. 💡
+            📝 Welcome to my blog – a space where I share my thoughts and insights about meetups, conferences, and everything that inspires me. 💡
             </Blockquote>
           </Grid.Cell>
         </Grid>

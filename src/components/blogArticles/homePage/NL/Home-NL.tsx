@@ -13,12 +13,11 @@ import styles from '../../../../App.module.scss';
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Spotlight color="blue">
+      <Spotlight>
         <Grid paddingVertical="medium">
           <Grid.Cell span="all">
             <Blockquote className={styles.customBlockquote}>
-              📝 In deze blog deel ik mijn ervaringen en inzichten van de
-              meetups en conferenties die ik bijgewoond heb. 💡
+              📝 Welkom op mijn blog – een plek waar ik mijn gedachten en inzichten deel over meetups, conferenties en alles wat me inspireert. 💡
             </Blockquote>
           </Grid.Cell>
         </Grid>
