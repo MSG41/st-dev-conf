@@ -32,11 +32,25 @@ body,
 //   width: 100%;
 // }
 
-// Text colors
+// Fix for accordion buttons on mobile
 .ams-accordion__button {
   color: white;
-  &:hover {
-    color: rgb(28, 189, 71);
+  transition: color 0.2s ease;
+
+  &:active {
+    color: rgb(46, 246, 100);
+  }
+
+  &:not(:active):focus {
+    color: white;
+  }
+}
+
+@include media.desktop {
+  .ams-accordion__button {
+    &:hover {
+      color: rgb(46, 246, 100);
+    }
   }
 }
 
@@ -145,5 +159,3 @@ body,
     color: rgb(46, 246, 100);
   }
 }
-
-

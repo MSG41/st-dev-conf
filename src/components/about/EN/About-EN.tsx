@@ -4,7 +4,7 @@ import styles from '../../../App.module.scss';
 
 export default function AboutEn() {
   return (
-    <div className={styles.blogContainer}>
+    <div className={styles.aboutContainer}>
       <div className={styles.accordion}>
         <Accordion headingLevel={1}>
           <Accordion.Section label="Who am I?">
