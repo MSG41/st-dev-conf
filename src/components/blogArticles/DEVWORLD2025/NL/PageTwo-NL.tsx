@@ -6,6 +6,7 @@ import {
   Grid,
   Blockquote,
   UnorderedList,
+  Link,
 } from '@amsterdam/design-system-react';
 
 import styles from '../../../../App.module.scss';
@@ -72,8 +73,10 @@ export default function PageTwo() {
           Tijdens de sessies was het inspirerend om te zien hoe technologie
           wordt ingezet voor software-internationalisatie, duurzame software en
           AI-implementaties. Toen ik mijn ervaring bij de gemeente en ons
-          project <strong>De Bomenkaart</strong> deelde, reageerden veel mensen
-          met oprechte interesse en waardering. 🌳
+          project {'\u00A0'}
+          <Link href="https://bomen.amsterdam.nl/">De Bomenkaart </Link>
+          {'\u00A0'} deelde, reageerden veel mensen met oprechte interesse en
+          waardering. 🌳
         </Paragraph>
         <br />
 
