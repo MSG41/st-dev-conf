@@ -134,3 +134,16 @@ body,
 .ams-link-list__link {
   margin-top: 1rem;
 }
+
+.ams-heading {
+  padding-top: 1rem;
+}
+
+.ams-card__link {
+  color: rgb(28, 189, 71);
+  &:hover {
+    color: rgb(46, 246, 100);
+  }
+}
+
+

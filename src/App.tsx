@@ -6,6 +6,8 @@ import {
   useLocation,
 } from 'react-router';
 import Home from './components/blogArticles/homePage/NL/Home-NL';
+import About from './components/about/NL/About-NL';
+import AboutEn from './components/about/EN/About-EN';
 import PageOne from './components/blogArticles/AIMeetupFeb2025/NL/PageOne-NL';
 import PageTwo from './components/blogArticles/DEVWORLD2025/NL/PageTwo-NL';
 import HomeEn from './components/blogArticles/homePage/EN/Home-EN';
@@ -47,6 +49,11 @@ function ConferenceLinks() {
     closeMenu();
   }, [navigate, isEnglish]);
 
+  const goToAbout = useCallback(() => {
+    navigate(isEnglish ? '/en/about' : '/about');
+    closeMenu();
+  }, [navigate, isEnglish]);
+
   return (
     <Grid.Cell span={4}>
       <Heading level={2}>Conferences & Meetups</Heading>
@@ -68,6 +75,18 @@ function ConferenceLinks() {
           }}
         >
           DEVWORLD 2025, Amsterdam
+        </LinkList.Link>
+      </LinkList>
+      <Heading level={2}>About</Heading>
+      <LinkList>
+        <LinkList.Link
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            goToAbout();
+          }}
+        >
+          About This Blog
         </LinkList.Link>
       </LinkList>
     </Grid.Cell>
@@ -140,6 +159,8 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: '/', element: <Home /> },
+      { path: '/about', element: <About /> },
+      { path: '/en/about', element: <AboutEn /> },
       { path: '/ai-meetup', element: <PageOne /> },
       { path: '/devworld2025', element: <PageTwo /> },
       { path: '/en', element: <HomeEn /> },

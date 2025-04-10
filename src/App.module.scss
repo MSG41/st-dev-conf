@@ -119,3 +119,26 @@
   font-family: 'Lucida Console', monospace;
   font-size: small;
 }
+
+.homePageUpdates {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+  gap: 5rem;
+  padding-bottom: 5rem;
+  max-width: 400px;
+  border-bottom: solid 2px white;
+}
+
+.standardHeading {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.date {
+  color: rgb(46, 246, 100);
+}
