@@ -21,6 +21,11 @@ body,
   width: 100%;
 }
 
+.ams-accordion__button, .ams-paragraph
+ {
+  color: white ;
+}
+
 //Hide Logo GEM AMS
 .ams-logo {
   opacity: 0;
@@ -34,7 +39,7 @@ body,
 .ams-header__brand-name {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) translateZ(0); 
+  transform: translateX(-50%) translateZ(0);
   padding-top: 0.25rem;
   padding-left: 0;
   color: white;
@@ -94,4 +99,3 @@ body,
 .ams-grid--padding-vertical--medium {
   padding: 1rem;
 }
-

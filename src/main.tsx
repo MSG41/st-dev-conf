@@ -19,7 +19,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ProgressBar />
     <ClickSpark
-      sparkColor="#000000"
+      sparkColor="#ffffff"
       sparkSize={10}
       sparkRadius={15}
       sparkCount={8}

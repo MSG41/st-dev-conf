@@ -18,7 +18,6 @@ import styles from '../../../../App.module.scss';
 
 export default function PageOne() {
   return (
-    <div className={`scrollContainer ${styles.scrollContainer}`}>
 
 
 
@@ -69,7 +68,7 @@ export default function PageOne() {
 </Card>
 
     </div>
-    </div>
+    // </div>
 
     // <div style={{ padding: '20px' }}>
     //   <Field>

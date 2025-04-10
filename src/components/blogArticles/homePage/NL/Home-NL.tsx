@@ -25,7 +25,6 @@ export default function Home() {
       </Spotlight>
       <SwiperCube />
 
-      {/* TEKSTEN */}
       <div className={styles.accordion}>
         <Accordion headingLevel={1}>
           <Accordion.Section label="Wie ben ik?">
