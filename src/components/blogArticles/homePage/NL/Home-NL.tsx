@@ -16,7 +16,7 @@ export default function Home() {
       <Spotlight>
         <Grid paddingVertical="medium">
           <Grid.Cell span="all">
-            <Blockquote className={styles.customBlockquote}>
+            <Blockquote >
               📝 Welkom op mijn blog – een plek waar ik mijn gedachten en inzichten deel over meetups, conferenties en alles wat me inspireert. 💡
             </Blockquote>
           </Grid.Cell>

@@ -54,7 +54,7 @@ body,
 .ams-heading,
 .ams-header__brand-name {
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   animation: tv-noise 6s ease-in-out infinite;
 }
@@ -78,7 +78,8 @@ body,
 .ams-header__mega-menu-button,
 .ams-link-list__link,
 .ams-header,
-.ams-header__menu-link {
+.ams-header__menu-link,
+.ams-unordered-list__item {
   color: white;
   &:hover {
     color: white;
@@ -105,4 +106,17 @@ body,
 .ams-grid--padding-vertical--medium {
   padding: 0.75rem;
 }
+
 //--------------------------------------------------
+// ALL the BLOG related components are here:
+.ams-page-heading {
+  color: white;
+}
+
+.ams-spotlight2 {
+  background-color: transparent;
+}
+
+::marker {
+  color: rgb(28, 189, 71);
+}
