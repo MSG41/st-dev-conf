@@ -10,10 +10,10 @@ import {
 import SwiperCube from '../../../animatedComponents/swiperCube/swiperCube';
 import styles from '../../../../App.module.scss';
 
-export default function Home() {
+export default function HomeEn() {
   return (
     <div className={styles.container}>
-      <Spotlight color="blue">
+      <Spotlight>
         <Grid paddingVertical="medium">
           <Grid.Cell span="all">
             <Blockquote>

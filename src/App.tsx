@@ -79,15 +79,23 @@ function Layout() {
 
   return (
     <div className={styles.appWrapper}>
-            <Logo />
+      <Logo />
 
-            <div className={styles.navbarShadow}></div>
+      <div className={styles.navbarShadow}></div>
 
       <Header
         className={`${styles.navbar} ${styles.fixedHeader}`}
         brandName="Blog - Tech Conferences"
         menuItems={[
-          <Header.MenuLink key="1" href="#" lang="en">
+          <Header.MenuLink
+            key="1"
+            href="#"
+            lang="en"
+            onClick={(e) => {
+              e.preventDefault();
+              handleTranslate();
+            }}
+          >
             {isEnglish ? 'Terug naar Nederlands' : 'Translate to English'}
           </Header.MenuLink>,
         ]}
