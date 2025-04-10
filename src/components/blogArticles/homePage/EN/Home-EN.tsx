@@ -16,8 +16,10 @@ export default function Home() {
       <Spotlight color="blue">
         <Grid paddingVertical="medium">
           <Grid.Cell span="all">
-            <Blockquote className={styles.customBlockquote}>
-            📝 Welcome to my blog – a space where I share my thoughts and insights about meetups, conferences, and everything that inspires me. 💡
+            <Blockquote>
+              📝 Welcome to my blog – a space where I share my thoughts and
+              insights about meetups, conferences, and everything that inspires
+              me. 💡
             </Blockquote>
           </Grid.Cell>
         </Grid>
