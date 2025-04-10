@@ -9,7 +9,7 @@ import {
 } from '@amsterdam/design-system-react';
 import styles from '../../../../App.module.scss';
 
-export default function PageOne() {
+export default function PageOneEn() {
   return (
     <div className={styles.blogContainer}>
       <Heading level={2}>AI On the Amstel Meetup</Heading>
