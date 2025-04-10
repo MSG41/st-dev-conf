@@ -37,20 +37,15 @@ body,
   color: white;
   transition: color 0.2s ease;
 
+  &:hover {
+    color: rgb(46, 246, 100);
+  }
   &:active {
     color: rgb(46, 246, 100);
   }
 
   &:not(:active):focus {
     color: white;
-  }
-}
-
-@include media.desktop {
-  .ams-accordion__button {
-    &:hover {
-      color: rgb(46, 246, 100);
-    }
   }
 }
 
@@ -108,8 +103,7 @@ body,
 .ams-blockquote {
   color: white;
   font-size: 1.2rem;
-  text-align:center;
-
+  text-align: center;
 }
 
 //Background & Border Radius Spotlight
