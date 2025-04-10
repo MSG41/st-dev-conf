@@ -18,8 +18,8 @@ export default function PageTwo() {
         DEVWORLD 2025 – Technologie, Innovatie & Netwerken
       </Heading>
       <br />
-      <Paragraph size="small">🎤 Gehost door: RAI Amsterdam</Paragraph>
-      <Paragraph size="small">📍 Locatie: RAI Amsterdam</Paragraph>
+      <Paragraph size="small">🎤 Gehost door: Amsterdam RAI</Paragraph>
+      <Paragraph size="small">📍 Locatie: Amsterdam RAI</Paragraph>
       <Paragraph size="small">🗓 Datum: 27 FEB 2025</Paragraph>
       <Paragraph size="small">
         👥 Bezoekers: 7.500+ developers, engineers, techleiders &
@@ -72,10 +72,10 @@ export default function PageTwo() {
         <Paragraph>
           Tijdens de sessies was het inspirerend om te zien hoe technologie
           wordt ingezet voor software-internationalisatie, duurzame software en
-          AI-implementaties. Toen ik mijn ervaring bij de gemeente en ons
-          project {'\u00A0'}
+          AI-implementaties. Toen ik mijn ervaring bij de gemeente vertelde en
+          ons project {'\u00A0'}
           <Link href="https://bomen.amsterdam.nl/">De Bomenkaart </Link>
-          {'\u00A0'} deelde, reageerden veel mensen met oprechte interesse en
+          {'\u00A0'} toonde, reageerden veel mensen met oprechte interesse en
           waardering. 🌳
         </Paragraph>
         <br />
