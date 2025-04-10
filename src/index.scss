@@ -103,14 +103,15 @@ body,
 .ams-blockquote {
   color: white;
   font-size: 1.2rem;
-  text-align: center;
+  // text-align: center;
 }
 
 //Background & Border Radius Spotlight
 .ams-spotlight {
   margin-top: 1rem;
-  background-color: rgb(72, 82, 89);
-  border-radius: 20px;
+  background-color: rgb(10, 28, 46);
+  border-radius: 5px;
+  border: solid 1px rgb(255, 255, 255);
 }
 
 // Padding Spotlight
@@ -150,8 +151,15 @@ body,
 }
 
 .ams-card__link {
-  color: rgb(28, 189, 71);
+  color: rgb(255, 255, 255);
   &:hover {
     color: rgb(46, 246, 100);
   }
+}
+
+.ams-card {
+  border-radius: 10px;
+  background-color: rgb(10, 28, 46);
+  padding: 1rem;
+  border: 1px solid rgb(210, 210, 210);
 }

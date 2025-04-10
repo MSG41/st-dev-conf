@@ -17,7 +17,7 @@ export default function Home() {
         <Grid paddingVertical="medium">
           <Grid.Cell span="all">
             <Blockquote>
-              📝 Welkom op mijn blog – een plek waar ik mijn gedachten en
+              👋🏼 Welkom op mijn blog – een plek waar ik mijn gedachten en
               inzichten deel over meetups, conferenties en alles wat me
               inspireert. 💡
             </Blockquote>
