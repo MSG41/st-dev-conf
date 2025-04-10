@@ -86,48 +86,66 @@ export default function PageTwoEn() {
         <br />
         <UnorderedList>
           <UnorderedList.Item>
-            "Beyond Code: Building a Thriving Tech Community" – Tina Tran (ING)
+            <strong>"Beyond Code: Building a Thriving Tech Community"</strong> –
+            Tina Tran (ING)
           </UnorderedList.Item>
           <UnorderedList.Item>
-            "Benefits of Using ING API SDK for Java Developers" – Lokesh
-            Haralakatta (ING)
+            <strong>"Benefits of Using ING API SDK for Java Developers"</strong>{' '}
+            – Lokesh Haralakatta (ING)
           </UnorderedList.Item>
           <UnorderedList.Item>
-            "Insights on Software Internationalization & NIO’s Smart Vehicle
-            Tech" – Dominique Massonié (NIO)
+            <strong>
+              "Insights on Software Internationalization & NIO’s Smart Vehicle
+              Tech"
+            </strong>{' '}
+            – Dominique Massonié (NIO)
           </UnorderedList.Item>
           <UnorderedList.Item>
-            "Future of AI Panel" – Bob van Luijt (Weaviate) & Steve Sewell
-            (Builder.io)
+            <strong> "Future of AI Panel"</strong> – Bob van Luijt (Weaviate) &
+            Steve Sewell (Builder.io)
           </UnorderedList.Item>
           <UnorderedList.Item>
-            "Gain More Confidence in Your Code with Mutation Testing" – Simone
-            Romani (ING)
+            <strong>
+              "Gain More Confidence in Your Code with Mutation Testing"
+            </strong>{' '}
+            – Simone Romani (ING)
           </UnorderedList.Item>
           <UnorderedList.Item>
-            "The Hidden Champions: How Booking.com Mentors Close Opportunity
-            Gaps for Women in Tech" – Natasha ten Cate & Floriana Zefi
-            (Booking.com)
+            <strong>
+              {' '}
+              "The Hidden Champions: How Booking.com Mentors Close Opportunity
+              Gaps for Women in Tech"
+            </strong>{' '}
+            – Natasha ten Cate & Floriana Zefi (Booking.com)
           </UnorderedList.Item>
           <UnorderedList.Item>
-            "Secure or Sorry: Your Software is Now a (European) Product" –
-            Daniel Thompson-Yvetot (CrabNebula Ltd.)
+            <strong>
+              "Secure or Sorry: Your Software is Now a (European) Product"
+            </strong>{' '}
+            – Daniel Thompson-Yvetot (CrabNebula Ltd.)
           </UnorderedList.Item>
           <UnorderedList.Item>
-            "Will LLMs Really Consume the Internet?" – Ariel Shulman (Bright
-            Data)
+            <strong>"Will LLMs Really Consume the Internet?"</strong> – Ariel
+            Shulman (Bright Data)
           </UnorderedList.Item>
           <UnorderedList.Item>
-            "Is Passwordless the Future? Examining the Pros and Cons of FIDO2" –
-            Marc Cortada Beromeu & Alexandru-Madalin Ghenea (ING)
+            <strong>
+              "Is Passwordless the Future? Examining the Pros and Cons of FIDO2"
+            </strong>{' '}
+            – Marc Cortada Beromeu & Alexandru-Madalin Ghenea (ING)
           </UnorderedList.Item>
           <UnorderedList.Item>
-            "Build Your Custom Copilot with Microsoft Copilot Studio" – Daniel
-            Laskewitz (Microsoft)
+            <strong>
+              "Build Your Custom Copilot with Microsoft Copilot Studio"
+            </strong>{' '}
+            – Daniel Laskewitz (Microsoft)
           </UnorderedList.Item>
           <UnorderedList.Item>
-            "Engineering Leadership in Crisis: Rebuilding Trust, Technology, and
-            Teamwork" – Simon Hall (Payaut)
+            <strong>
+              "Engineering Leadership in Crisis: Rebuilding Trust, Technology,
+              and Teamwork"
+            </strong>{' '}
+            – Simon Hall (Payaut)
           </UnorderedList.Item>
         </UnorderedList>
         <br />
