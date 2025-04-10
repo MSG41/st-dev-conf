@@ -26,7 +26,7 @@ export default function Home() {
       </Spotlight>
 
       <div className={styles.standardHeading}>
-        <Heading level={2}>Latest Updates:</Heading>
+        <Heading level={2}>Nieuwste Updates:</Heading>
       </div>
 
       <div className={styles.homePageUpdates}>
