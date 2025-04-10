@@ -145,8 +145,8 @@ export default function PageTwoEn() {
           The Future of AI panel was also super insightful. I gained a clearer
           picture of how vector databases and AI deployments are being used
           across industries. Bright Data’s talk on scraping data to feed AI
-          models was a highlight—it’s something I could imagine applying at the
-          municipality to train our own agents with more relevant data.
+          models was a highlight—it’s something I could imagine the Municipality
+          apply to train our own AI agents.
         </Paragraph>
         <br />
 

@@ -108,18 +108,20 @@ body,
 .ams-blockquote {
   color: white;
   font-size: 1.2rem;
+  text-align:center;
+
 }
 
 //Background & Border Radius Spotlight
 .ams-spotlight {
   margin-top: 1rem;
-  background-color: rgb(120, 187, 228);
+  background-color: rgb(72, 82, 89);
   border-radius: 20px;
 }
 
 // Padding Spotlight
 .ams-grid--padding-vertical--medium {
-  padding: 0.75rem;
+  padding: 0.5rem;
 }
 
 //--------------------------------------------------
