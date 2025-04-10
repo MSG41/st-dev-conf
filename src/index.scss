@@ -33,9 +33,11 @@ body,
 // }
 
 // Text colors
-.ams-accordion__button,
-.ams-paragraph {
+.ams-accordion__button {
   color: white;
+  &:hover {
+    color: rgb(28, 189, 71);
+  }
 }
 
 // Brand Name : Blog - Tech Conferences
@@ -78,8 +80,7 @@ body,
 .ams-header__mega-menu-button,
 .ams-link-list__link,
 .ams-header,
-.ams-header__menu-link,
-.ams-unordered-list__item {
+.ams-header__menu-link {
   color: white;
   &:hover {
     color: white;
@@ -109,7 +110,9 @@ body,
 
 //--------------------------------------------------
 // ALL the BLOG related components are here:
-.ams-page-heading {
+.ams-page-heading,
+.ams-unordered-list__item,
+.ams-paragraph {
   color: white;
 }
 
@@ -117,6 +120,13 @@ body,
   background-color: transparent;
 }
 
-::marker {
+::marker,
+.ams-link {
   color: rgb(28, 189, 71);
+}
+
+.ams-link {
+  &:hover {
+    color: rgb(46, 246, 100);
+  }
 }

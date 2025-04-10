@@ -6,6 +6,7 @@ import {
   Grid,
   Blockquote,
   UnorderedList,
+  Link,
 } from '@amsterdam/design-system-react';
 
 import styles from '../../../../App.module.scss';
@@ -64,7 +65,7 @@ export default function PageTwoEn() {
           implementations, and DevOps innovation. I attended DEVWorld 2025 to
           learn how other professionals work and what kind of projects they’re
           involved in. It was also a very international setting, so everyone
-          spoke English, which made the experience even better.
+          spoke English, which was a pleasant experience.
         </Paragraph>
         <br />
 
@@ -72,8 +73,9 @@ export default function PageTwoEn() {
           During the sessions, it was inspiring to see how tech is being used
           for software internationalization, sustainable software, and AI
           implementations. When I shared my experience at the municipality and
-          our project <strong>De Bomenkaart</strong>, many people responded with
-          genuine interest and appreciation. 🌳
+          our project{' '}
+          <Link href="https://bomen.amsterdam.nl/">De Bomenkaart</Link> many
+          people responded with genuine interest and appreciation. 🌳
         </Paragraph>
         <br />
 
