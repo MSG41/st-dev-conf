@@ -77,7 +77,7 @@ export default function HomeEn() {
         </Card>
       </div>
       <div className={styles.standardHeading}>
-        <Heading level={2}>Cool 3D Cube :) </Heading>
+        <Heading level={2}>3D Cube</Heading>
       </div>
       <SwiperCube />
     </div>

@@ -77,7 +77,7 @@ export default function Home() {
         </Card>
       </div>
       <div className={styles.standardHeading}>
-        <Heading level={2}>Cool 3D Cube :) </Heading>
+        <Heading level={3}>3D Kubus</Heading>
       </div>
       <SwiperCube />
     </div>
