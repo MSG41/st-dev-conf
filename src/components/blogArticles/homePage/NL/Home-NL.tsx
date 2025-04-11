@@ -37,7 +37,7 @@ export default function Home() {
             src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_112513-fBYoynS3aWiYOiFUy1z7ZR1uCBUG6o.jpg"
           />
           <Card.HeadingGroup tagline="Conference">
-            <Heading level={1} size="level-4">
+            <Heading level={2} size="level-3">
               <Card.Link href="/devworld2025">
                 DEVWORLD 2025 – Technologie, Innovatie & Netwerken{' '}
               </Card.Link>
@@ -60,7 +60,7 @@ export default function Home() {
             src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/AiOnTheAmstel-26Feb2025/20250226_174021-6YnwwqLItwTyTDeEGgxQeN8jw7zERp.jpg"
           />
           <Card.HeadingGroup tagline="Meetup">
-            <Heading level={1} size="level-4">
+            <Heading level={2} size="level-3">
               <Card.Link href="/ai-meetup">
                 AI On The Amstel Meetup - Agentic AI
               </Card.Link>
