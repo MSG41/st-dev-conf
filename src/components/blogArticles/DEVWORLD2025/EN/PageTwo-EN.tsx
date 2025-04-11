@@ -63,7 +63,7 @@ export default function PageTwoEn() {
         <Paragraph>
           This year’s focus included Agentic AI, data scraping, LLM
           implementations, and DevOps innovation. I attended DEVWorld 2025 to
-          learn how other professionals work and what kind of projects they’re
+          have a closer look at how other professionals work and what kind of projects they’re
           involved in. It was also a very international setting, so everyone
           spoke English, which was a pleasant experience.
         </Paragraph>

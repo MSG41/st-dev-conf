@@ -34,29 +34,6 @@ export default function Home() {
           <Image
             alt=""
             aspectRatio="16:9"
-            src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/AiOnTheAmstel-26Feb2025/20250226_174021-6YnwwqLItwTyTDeEGgxQeN8jw7zERp.jpg"
-          />
-          <Card.HeadingGroup tagline="Meetup">
-            <Heading level={1} size="level-4">
-              <Card.Link href="/ai-meetup">
-                AI On The Amstel Meetup - Agentic AI
-              </Card.Link>
-            </Heading>
-          </Card.HeadingGroup>
-          <Paragraph>
-            Deze editie ging vooral over de uitdagingen van het bouwen en
-            implementeren van <strong>agentische AI</strong> – systemen die
-            zelfstandig acties kunnen uitvoeren.
-          </Paragraph>
-          <Paragraph size="small" className={styles.date}>
-            26 FEB 2025
-          </Paragraph>
-        </Card>
-
-        <Card>
-          <Image
-            alt=""
-            aspectRatio="16:9"
             src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_112513-fBYoynS3aWiYOiFUy1z7ZR1uCBUG6o.jpg"
           />
           <Card.HeadingGroup tagline="Conference">
@@ -73,6 +50,29 @@ export default function Home() {
           </Paragraph>
           <Paragraph size="small" className={styles.date}>
             27 FEB 2025
+          </Paragraph>
+        </Card>
+
+        <Card>
+          <Image
+            alt=""
+            aspectRatio="16:9"
+            src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/AiOnTheAmstel-26Feb2025/20250226_174021-6YnwwqLItwTyTDeEGgxQeN8jw7zERp.jpg"
+          />
+          <Card.HeadingGroup tagline="Meetup">
+            <Heading level={1} size="level-4">
+              <Card.Link href="/ai-meetup">
+                AI On The Amstel Meetup - Agentic AI
+              </Card.Link>
+            </Heading>
+          </Card.HeadingGroup>
+          <Paragraph>
+            Deze editie ging vooral over de uitdagingen van het bouwen en
+            implementeren van <strong>agentische AI</strong> – systemen die
+            zelfstandig acties kunnen uitvoeren.
+          </Paragraph>
+          <Paragraph size="small" className={styles.date}>
+            26 FEB 2025
           </Paragraph>
         </Card>
       </div>

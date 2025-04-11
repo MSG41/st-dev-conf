@@ -63,7 +63,7 @@ export default function PageTwo() {
         <Paragraph>
           De nadruk lag dit jaar op Agentic AI, data scraping,
           LLM-implementaties en DevOps-innovatie. Ik ging naar DEVWorld 2025 om
-          te leren hoe andere professionals werken en met welke projecten zij
+          te kijken hoe andere professionals werken en met welke projecten zij
           bezig zijn. Het was een internationale setting waarin iedereen Engels
           sprak – een fijne ervaring.
         </Paragraph>
