@@ -2,6 +2,46 @@
 @use '@amsterdam/design-system-tokens/dist/index.css';
 @use '@amsterdam/design-system-tokens/dist/compact.css';
 
+/* --------------------------------------
+ * THEME VARIABLES
+ * -------------------------------------- */
+:root {
+  // Light theme variables
+  --background-color: #f5f5f5;
+  --text-color: #333333;
+  --accent-color: #006837;
+  --accent-hover-color: #008c46;
+  --card-background: #ffffff;
+  --card-border: #d2d2d2;
+  --header-background: #ffffff;
+  --header-text: #333333;
+  --link-color: #006837;
+  --link-hover-color: #008c46;
+  --spotlight-background: #e8e8e8;
+  --spotlight-border: #d2d2d2;
+  --nav-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark theme (default) */
+.dark-theme {
+  --background-color: rgb(0, 16, 29);
+  --text-color: white;
+  --accent-color: rgb(28, 189, 71);
+  --accent-hover-color: rgb(46, 246, 100);
+  --card-background: rgb(10, 28, 46);
+  --card-border: rgb(210, 210, 210);
+  --header-background: rgb(0, 0, 21);
+  --header-text: white;
+  --link-color: rgb(28, 189, 71);
+  --link-hover-color: rgb(46, 246, 100);
+  --spotlight-background: rgb(10, 28, 46);
+  --spotlight-border: rgb(255, 255, 255);
+  --nav-shadow-color: rgba(0, 0, 0, 0.6);
+}
+
+/* --------------------------------------
+ * BASE STYLES
+ * -------------------------------------- */
 html,
 body,
 #root {
@@ -11,13 +51,32 @@ body,
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: transparent;
-  // -webkit-user-select: none;
-  // -moz-user-select: none;
-  // -ms-user-select: none;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-//--------------------------------------------------
-//Hide Logo GEM AMS
+body {
+  /* Light theme is the default */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* --------------------------------------
+ * LAYOUT & STRUCTURAL COMPONENTS
+ * -------------------------------------- */
+.scrollContainer {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: calc(var(--vh, 1vh) * 100);
+  background-color: transparent;
+}
+
+/* --------------------------------------
+ * HEADER COMPONENTS
+ * -------------------------------------- */
 .ams-logo {
   opacity: 0;
   cursor: pointer;
@@ -25,46 +84,140 @@ body,
   z-index: 9000;
   pointer-events: auto;
 }
-//--------------------------------------------------
 
-// Fix for accordion buttons on mobile
+.ams-header {
+  color: var(--header-text);
+
+  &__brand-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateZ(0);
+    padding-top: 0.25rem;
+    padding-left: 0;
+    color: var(--header-text);
+    text-align: center;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    animation: tv-noise 30s ease-in-out infinite;
+  }
+
+  &__mega-menu-button,
+  &__menu-link {
+    color: var(--header-text);
+
+    &:hover {
+      color: var(--header-text);
+      font-weight: 600;
+    }
+  }
+}
+
+/* --------------------------------------
+ * NAVIGATION & LINKS
+ * -------------------------------------- */
+.ams-link-list__link {
+  color: var(--header-text);
+  margin-top: 1rem;
+
+  &:hover {
+    color: var(--accent-hover-color);
+    font-weight: 600;
+  }
+}
+
+.ams-link {
+  color: var(--link-color);
+
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+
+/* --------------------------------------
+ * ACCORDION COMPONENTS
+ * -------------------------------------- */
 .ams-accordion__button {
-  color: white;
+  color: var(--text-color);
   transition: color 0.2s ease;
 
   &:hover {
-    color: rgb(46, 246, 100);
+    color: var(--accent-hover-color);
   }
+
   &:active {
-    color: rgb(46, 246, 100);
+    color: var(--accent-hover-color);
   }
 
   &:not(:active):focus {
-    color: white;
+    color: var(--text-color);
   }
 }
 
-// Brand Name : Blog - Tech Conferences
-.ams-header__brand-name {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) translateZ(0);
-  padding-top: 0.25rem;
-  padding-left: 0;
-  color: white;
+/* --------------------------------------
+ * TYPOGRAPHY
+ * -------------------------------------- */
+.ams-heading {
+  color: var(--text-color);
+  padding-top: 1rem;
+}
+
+.ams-page-heading,
+.ams-unordered-list__item,
+.ams-paragraph {
+  color: var(--text-color);
+}
+
+::marker {
+  color: var(--accent-color);
+}
+
+/* --------------------------------------
+ * SPOTLIGHT & CONTENT BLOCKS
+ * -------------------------------------- */
+.ams-blockquote {
+  color: var(--text-color);
+  font-size: 1.2rem;
   text-align: center;
-  margin: 0;
+  padding: 1rem;
+  position: relative;
 }
 
-// TV NOISE EFFECT on Brand Name and Heading in menu.
-// .ams-heading,
-.ams-header__brand-name {
-  color: white;
-  // font-size: 1.5rem;
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-  animation: tv-noise 30s ease-in-out infinite;
+.ams-spotlight {
+  margin-top: 1rem;
+  background-color: var(--spotlight-background);
+  border-radius: 5px;
+  border: solid 1px var(--spotlight-border);
 }
 
+.ams-spotlight2 {
+  background-color: transparent;
+}
+
+.ams-grid--padding-vertical--medium {
+  padding: 0.5rem;
+}
+
+/* --------------------------------------
+ * CARD COMPONENTS
+ * -------------------------------------- */
+.ams-card {
+  border-radius: 10px;
+  background-color: var(--card-background);
+  padding: 1rem;
+  border: 1px solid var(--card-border);
+
+  &__link {
+    color: var(--text-color);
+
+    &:hover {
+      color: var(--accent-hover-color);
+    }
+  }
+}
+
+/* --------------------------------------
+ * ANIMATIONS
+ * -------------------------------------- */
 @keyframes tv-noise {
   0%,
   8.3%,
@@ -82,86 +235,33 @@ body,
   }
 }
 
-.ams-heading {
-  color: white;
-}
+/* --------------------------------------
+ * THEME TOGGLE BUTTON
+ * -------------------------------------- */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 3rem;
+  z-index: 3000;
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 
-.ams-header__mega-menu-button,
-.ams-link-list__link,
-.ams-header,
-.ams-header__menu-link {
-  color: white;
   &:hover {
-    color: white;
-    font-weight: 600;
+    transform: scale(1.1);
   }
-}
 
-//--------------------------------------------------
-// Spotlight fixes.
-//Color and FontSize Spotlight
-.ams-blockquote {
-  color: white;
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 1rem;
-  position: relative;
-}
-
-//Background & Border Radius Spotlight
-.ams-spotlight {
-  margin-top: 1rem;
-  background-color: rgb(10, 28, 46);
-  border-radius: 5px;
-  border: solid 1px rgb(255, 255, 255);
-}
-
-// Padding Spotlight
-.ams-grid--padding-vertical--medium {
-  padding: 0.5rem;
-}
-
-//--------------------------------------------------
-// ALL the BLOG related components are here:
-.ams-page-heading,
-.ams-unordered-list__item,
-.ams-paragraph {
-  color: white;
-}
-
-.ams-spotlight2 {
-  background-color: transparent;
-}
-
-::marker,
-.ams-link {
-  color: rgb(28, 189, 71);
-}
-
-.ams-link {
-  &:hover {
-    color: rgb(46, 246, 100);
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--text-color);
   }
-}
-
-.ams-link-list__link {
-  margin-top: 1rem;
-}
-
-.ams-heading {
-  padding-top: 1rem;
-}
-
-.ams-card__link {
-  color: rgb(255, 255, 255);
-  &:hover {
-    color: rgb(46, 246, 100);
-  }
-}
-
-.ams-card {
-  border-radius: 10px;
-  background-color: rgb(10, 28, 46);
-  padding: 1rem;
-  border: 1px solid rgb(210, 210, 210);
 }

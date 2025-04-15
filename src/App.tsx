@@ -23,6 +23,7 @@ import { useCallback } from 'react';
 import styles from './App.module.scss';
 import ErrorPage from './components/animatedComponents/404/errorPage';
 import Logo from './components/logo/Logo';
+import ThemeToggle from './components/themeToggle/ThemeToggle';
 
 // A function that closes the menu. It will be used after clicking on menu links. Maybe ADS could implement a better system. Or maybe I didn't discover that yet 😅.
 const closeMenu = () => {
@@ -110,6 +111,7 @@ function Layout() {
   return (
     <div className={styles.appWrapper}>
       <Logo />
+      <ThemeToggle />
       <div className={styles.navbarShadow}></div>
       <Header
         className={`${styles.navbar} ${styles.fixedHeader}`}

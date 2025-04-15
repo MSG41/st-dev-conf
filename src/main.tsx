@@ -4,9 +4,8 @@ import '@amsterdam/design-system-tokens/dist/index.css';
 import './index.scss';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './App.tsx';
 import ProgressBar from './components/progressBar/ProgressBar';
-import ClickSpark from './components/animatedComponents/clickSpark/clickSpark';
+import { ThemedApp } from './themedApp';
 
 function setViewportHeight() {
   const vh = window.innerHeight * 0.01;
@@ -18,14 +17,6 @@ window.addEventListener('resize', setViewportHeight);
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ProgressBar />
-    <ClickSpark
-      sparkColor="#ffffff"
-      sparkSize={10}
-      sparkRadius={15}
-      sparkCount={8}
-      duration={400}
-    >
-      <App />
-    </ClickSpark>
+    <ThemedApp />
   </StrictMode>
 );
