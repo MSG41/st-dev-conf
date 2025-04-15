@@ -31,6 +31,10 @@ export default function PageTwo() {
         controls
         images={[
           {
+            alt: '3dPlan',
+            src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/3dPLAN-zNgn5vbbCL6x0YluqjCVvwTRQKyhcz.jpg',
+          },
+          {
             alt: 'entree',
             src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_112303-cF13gD1WwdYvQw7YwOyaPNgil4ProF.jpg',
           },
@@ -41,6 +45,14 @@ export default function PageTwo() {
           {
             alt: 'presentatie-coding',
             src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_112924-CSMUYM7XUEHvzz91RuwrgqrLwv8iDy.jpg',
+          },
+          {
+            alt: 'ELIZA',
+            src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/ELIZA-pfPOYyPpGh6KwvH4T5KAYZ2UbPzUa7.jpg',
+          },
+          {
+            alt: 'BRIGHT',
+            src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_114038-W719p0zA4uD3kviO7x9y3ndxXPSb4u.jpg',
           },
         ]}
       />

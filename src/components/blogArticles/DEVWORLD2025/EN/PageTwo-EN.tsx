@@ -31,6 +31,10 @@ export default function PageTwoEn() {
         controls
         images={[
           {
+            alt: '3dPlan',
+            src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/3dPLAN-zNgn5vbbCL6x0YluqjCVvwTRQKyhcz.jpg',
+          },
+          {
             alt: 'entrance',
             src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_112303-cF13gD1WwdYvQw7YwOyaPNgil4ProF.jpg',
           },
@@ -41,6 +45,14 @@ export default function PageTwoEn() {
           {
             alt: 'presentation-coding',
             src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_112924-CSMUYM7XUEHvzz91RuwrgqrLwv8iDy.jpg',
+          },
+          {
+            alt: 'ELIZA',
+            src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/ELIZA-pfPOYyPpGh6KwvH4T5KAYZ2UbPzUa7.jpg',
+          },
+          {
+            alt: 'BRIGHT',
+            src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_114038-W719p0zA4uD3kviO7x9y3ndxXPSb4u.jpg',
           },
         ]}
       />
@@ -63,9 +75,9 @@ export default function PageTwoEn() {
         <Paragraph>
           This year’s focus included Agentic AI, data scraping, LLM
           implementations, and DevOps innovation. I attended DEVWorld 2025 to
-          have a closer look at how other professionals work and what kind of projects they’re
-          involved in. It was also a very international setting, so everyone
-          spoke English, which was a pleasant experience.
+          have a closer look at how other professionals work and what kind of
+          projects they’re involved in. It was also a very international
+          setting, so everyone spoke English, which was a pleasant experience.
         </Paragraph>
         <br />
 
