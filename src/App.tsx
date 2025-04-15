@@ -19,13 +19,12 @@ import {
   LinkList,
   Heading,
 } from '@amsterdam/design-system-react';
-import { useCallback } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import styles from './App.module.scss';
 import ErrorPage from './components/animatedComponents/404/errorPage';
 import Logo from './components/logo/Logo';
 import ThemeToggle from './components/themeToggle/ThemeToggle';
 
-// A function that closes the menu. It will be used after clicking on menu links. Maybe ADS could implement a better system. Or maybe I didn't discover that yet 😅.
 const closeMenu = () => {
   const button = document.querySelector(
     'button.ams-header__mega-menu-button[aria-expanded="true"]'
@@ -33,6 +32,11 @@ const closeMenu = () => {
   if (button instanceof HTMLButtonElement) {
     button.click();
   }
+};
+
+const isMenuOpen = () => {
+  const button = document.querySelector('button.ams-header__mega-menu-button');
+  return button?.getAttribute('aria-expanded') === 'true';
 };
 
 function ConferenceLinks() {
@@ -98,6 +102,8 @@ function Layout() {
   const navigate = useNavigate();
   const location = useLocation();
   const isEnglish = location.pathname.startsWith('/en');
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const previousPathRef = useRef(location.pathname);
 
   const handleTranslate = () => {
     if (isEnglish) {
@@ -107,6 +113,44 @@ function Layout() {
     }
     closeMenu();
   };
+
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    if (!scrollContainer) return;
+
+    if (previousPathRef.current !== location.pathname) {
+      scrollContainer.scrollTo(0, 0);
+      previousPathRef.current = location.pathname;
+    }
+
+    const handleScroll = () => isMenuOpen() && closeMenu();
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (!isMenuOpen()) return;
+
+      const menuElement = document.querySelector('.ams-header__mega-menu');
+      const menuButton = document.querySelector(
+        'button.ams-header__mega-menu-button'
+      );
+
+      if (
+        menuElement?.contains(event.target as Node) ||
+        menuButton?.contains(event.target as Node)
+      ) {
+        return;
+      }
+
+      closeMenu();
+    };
+
+    scrollContainer.addEventListener('scroll', handleScroll);
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      scrollContainer.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [location.pathname]);
 
   return (
     <div className={styles.appWrapper}>
@@ -148,7 +192,10 @@ function Layout() {
           <ConferenceLinks />
         </Grid>
       </Header>
-      <div className={`scrollContainer ${styles.scrollContainer}`}>
+      <div
+        className={`scrollContainer ${styles.scrollContainer}`}
+        ref={scrollContainerRef}
+      >
         <Outlet />
       </div>
     </div>
