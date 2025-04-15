@@ -33,6 +33,36 @@ export const DEVWorldImages = () => {
           alt: 'VRF1',
           src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/VRF1-F1o0kCigR22AaTxUxauOOV7G80CYOr.jpg',
         },
+        {
+          alt: 'DataDog',
+          src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_133639-I7Lzu4QZLzkMeVPlQIxk7YQbfhxVU9.jpg',
+        },
+        {
+          alt: 'BrightData',
+          src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/brightDATA-xIn7E7nk9ZnYmDyliim8UHHS3dIHOd.jpg',
+        },
+        {
+          alt: 'DRobotics',
+          src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/DROBOT-msTT0wqRcqyHvRWngMOWWfdmzmdCQc.jpg',
+        },
+        {
+          alt: 'BattleStation',
+          src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/BattleStation-0sOeo7cjL2LhMl2MUzI6Ik3k58xCmO.jpg',
+        },
+
+        {
+          alt: 'CloudFare',
+          src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_161712-jDQlUcN4GxxEoAnkFaOqKfRmX8GrAC.jpg',
+        },
+
+        {
+          alt: 'partyBar',
+          src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/partybar-6y3jfaS5nVpW07x4V4xXy9t69eo6q0.jpg',
+        },
+        {
+          alt: 'karaoke',
+          src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/karaoke-X8pyPjr1rZGFivld0iV3gyjF3yZiJF.jpg',
+        },
       ]}
     />
   );
