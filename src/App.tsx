@@ -44,20 +44,14 @@ function ConferenceLinks() {
   const location = useLocation();
   const isEnglish = location.pathname.startsWith('/en');
 
-  const goToPageOne = useCallback(() => {
-    navigate(isEnglish ? '/en/ai-meetup' : '/ai-meetup');
-    closeMenu();
-  }, [navigate, isEnglish]);
-
-  const goToPageTwo = useCallback(() => {
-    navigate(isEnglish ? '/en/devworld2025' : '/devworld2025');
-    closeMenu();
-  }, [navigate, isEnglish]);
-
-  const goToAbout = useCallback(() => {
-    navigate(isEnglish ? '/en/about' : '/about');
-    closeMenu();
-  }, [navigate, isEnglish]);
+  const navigateTo = useCallback(
+    (basePath: string) => {
+      const fullPath = isEnglish ? `/en${basePath}` : basePath;
+      navigate(fullPath);
+      closeMenu();
+    },
+    [navigate, isEnglish]
+  );
 
   return (
     <Grid.Cell span={4}>
@@ -67,7 +61,7 @@ function ConferenceLinks() {
           href="#"
           onClick={(e) => {
             e.preventDefault();
-            goToPageOne();
+            navigateTo('/ai-meetup');
           }}
         >
           AI On The Amstel Meetup, Amsterdam
@@ -76,7 +70,7 @@ function ConferenceLinks() {
           href="#"
           onClick={(e) => {
             e.preventDefault();
-            goToPageTwo();
+            navigateTo('/devworld2025');
           }}
         >
           DEVWORLD 2025, Amsterdam
@@ -88,7 +82,7 @@ function ConferenceLinks() {
           href="#"
           onClick={(e) => {
             e.preventDefault();
-            goToAbout();
+            navigateTo('/about');
           }}
         >
           About This Blog
