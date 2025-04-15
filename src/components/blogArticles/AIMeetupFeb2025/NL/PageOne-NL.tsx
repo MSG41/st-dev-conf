@@ -1,13 +1,13 @@
 import {
   Heading,
   Paragraph,
-  ImageSlider,
   Spotlight,
   Grid,
   Blockquote,
   UnorderedList,
 } from '@amsterdam/design-system-react';
 import styles from '../../../../App.module.scss';
+import { AIOTAImages } from '../AIOTAImages';
 
 export default function PageOne() {
   return (
@@ -21,19 +21,7 @@ export default function PageOne() {
       <Paragraph size="small">🗓 Datum: 26 FEB 2025.</Paragraph>
 
       <br />
-      <ImageSlider
-        controls
-        images={[
-          {
-            alt: 'AOTA1',
-            src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/AiOnTheAmstel-26Feb2025/20250226_174021-6YnwwqLItwTyTDeEGgxQeN8jw7zERp.jpg',
-          },
-          {
-            alt: 'AOTA2',
-            src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/AiOnTheAmstel-26Feb2025/20250226_182925-hQdNGpLbLZAg5yOyOtfpGLCK3CkszB.jpg',
-          },
-        ]}
-      />
+      <AIOTAImages />
       <br />
       <Spotlight className={styles.customBlockquote}>
         <Grid paddingVertical="medium">

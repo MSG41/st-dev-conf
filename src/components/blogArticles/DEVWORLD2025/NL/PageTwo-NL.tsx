@@ -1,7 +1,6 @@
 import {
   Heading,
   Paragraph,
-  ImageSlider,
   Spotlight,
   Grid,
   Blockquote,
@@ -10,6 +9,7 @@ import {
 } from '@amsterdam/design-system-react';
 
 import styles from '../../../../App.module.scss';
+import { DEVWorldImages } from '../DEVWorldImages';
 
 export default function PageTwo() {
   return (
@@ -27,35 +27,7 @@ export default function PageTwo() {
       </Paragraph>
 
       <br />
-      <ImageSlider
-        controls
-        images={[
-          {
-            alt: '3dPlan',
-            src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/3dPLAN-zNgn5vbbCL6x0YluqjCVvwTRQKyhcz.jpg',
-          },
-          {
-            alt: 'entree',
-            src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_112303-cF13gD1WwdYvQw7YwOyaPNgil4ProF.jpg',
-          },
-          {
-            alt: 'presentatie',
-            src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_112513-fBYoynS3aWiYOiFUy1z7ZR1uCBUG6o.jpg',
-          },
-          {
-            alt: 'presentatie-coding',
-            src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_112924-CSMUYM7XUEHvzz91RuwrgqrLwv8iDy.jpg',
-          },
-          {
-            alt: 'ELIZA',
-            src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/ELIZA-pfPOYyPpGh6KwvH4T5KAYZ2UbPzUa7.jpg',
-          },
-          {
-            alt: 'BRIGHT',
-            src: 'https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_114038-W719p0zA4uD3kviO7x9y3ndxXPSb4u.jpg',
-          },
-        ]}
-      />
+      <DEVWorldImages />
       <br />
 
       <Spotlight className={styles.customBlockquote}>
