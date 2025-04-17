@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './styles.css';
 import { EffectCube, Pagination } from 'swiper/modules';
@@ -14,16 +14,64 @@ interface SwiperCubeProps {
 
 const SwiperCube: React.FC<SwiperCubeProps> = ({ images }) => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<ImageData | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number>(0);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+  const isSwiping = useRef(false);
 
-  const openModal = (image: ImageData) => {
-    setSelectedImage(image);
+  const openModal = (index: number) => {
+    setSelectedImageIndex(index);
     setModalOpen(true);
   };
 
   const closeModal = () => {
     setModalOpen(false);
-    setSelectedImage(null);
+  };
+
+  const goToNextImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setSelectedImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const goToPrevImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setSelectedImageIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    isSwiping.current = false;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX;
+
+    if (Math.abs(touchEndX.current - touchStartX.current) > 20) {
+      isSwiping.current = true;
+    }
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (!isSwiping.current) return;
+
+    const swipeThreshold = 100;
+    const difference = touchEndX.current - touchStartX.current;
+
+    if (difference > swipeThreshold) {
+      e.preventDefault();
+      setSelectedImageIndex((prevIndex) =>
+        prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      );
+    } else if (difference < -swipeThreshold) {
+      e.preventDefault();
+      setSelectedImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }
+
+    touchStartX.current = 0;
+    touchEndX.current = 0;
+    isSwiping.current = false;
   };
 
   return (
@@ -58,7 +106,7 @@ const SwiperCube: React.FC<SwiperCubeProps> = ({ images }) => {
                     objectFit: 'cover',
                     cursor: 'pointer',
                   }}
-                  onClick={() => openModal(image)}
+                  onClick={() => openModal(index)}
                 />
               </div>
             </SwiperSlide>
@@ -66,8 +114,14 @@ const SwiperCube: React.FC<SwiperCubeProps> = ({ images }) => {
         </Swiper>
       </div>
 
-      {modalOpen && selectedImage && (
-        <div className="image-modal-overlay" onClick={closeModal}>
+      {modalOpen && images[selectedImageIndex] && (
+        <div
+          className="image-modal-overlay"
+          onClick={closeModal}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
           <div
             className="image-modal-content"
             onClick={(e) => e.stopPropagation()}
@@ -75,12 +129,42 @@ const SwiperCube: React.FC<SwiperCubeProps> = ({ images }) => {
             <button className="modal-close-button" onClick={closeModal}>
               ×
             </button>
+            <button
+              className="modal-nav-button modal-prev-button"
+              onClick={goToPrevImage}
+              aria-label="Previous image"
+            >
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M15 18l-6-6 6-6"
+                  stroke="currentColor"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              className="modal-nav-button modal-next-button"
+              onClick={goToNextImage}
+              aria-label="Next image"
+            >
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M9 18l6-6-6-6"
+                  stroke="currentColor"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
             <img
-              src={selectedImage.src}
-              alt={selectedImage.alt}
+              src={images[selectedImageIndex].src}
+              alt={images[selectedImageIndex].alt}
               className="modal-image"
             />
-            <p className="modal-caption">{selectedImage.alt}</p>
+            <p className="modal-caption">{images[selectedImageIndex].alt}</p>
           </div>
         </div>
       )}
