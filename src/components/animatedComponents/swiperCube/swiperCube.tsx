@@ -3,12 +3,25 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import './styles.css';
 import { EffectCube, Pagination } from 'swiper/modules';
 
-const SwiperCube: React.FC = () => {
+interface ImageData {
+  src: string;
+  alt: string;
+}
+
+interface SwiperCubeProps {
+  images: ImageData[];
+}
+
+const SwiperCube: React.FC<SwiperCubeProps> = ({ images }) => {
   return (
-    <div className="swiper-container">
+    <div
+      className="swiper-container"
+      style={{ maxWidth: '500px', margin: '0 auto' }}
+    >
       <Swiper
         effect={'cube'}
         grabCursor={true}
+        loop={true}
         cubeEffect={{
           shadow: true,
           slideShadows: true,
@@ -19,30 +32,22 @@ const SwiperCube: React.FC = () => {
         modules={[EffectCube, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img
-            src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/cubeImages/cube1-RZnEnfuQ213WLkFc9AkhlP1WKfs8GL.jpg"
-            alt="Nature 1"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/cubeImages/cube2-m7HvFF6cPn12EZzHkTG2lI3PQqOfty.jpg"
-            alt="Nature 2"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/cubeImages/cube3-87Ok0XYxt9IaLEOuzJdlBxREKlawzB.jpg"
-            alt="Nature 3"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/cubeImages/cube4-JetLl6JTUBzhUDq8YQbCM6iYd26S8I.jpg"
-            alt="Nature 4"
-          />
-        </SwiperSlide>
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <div className="image-container">
+              <img
+                src={image.src}
+                alt={image.alt}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  aspectRatio: '4/3',
+                }}
+              />
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

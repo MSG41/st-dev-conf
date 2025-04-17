@@ -7,7 +7,7 @@ import {
   Image,
   Paragraph,
 } from '@amsterdam/design-system-react';
-import SwiperCube from '../../../animatedComponents/swiperCube/swiperCube';
+import { HomeCube } from '../homeCube';
 import styles from '../../../../App.module.scss';
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
           <Image
             alt=""
             aspectRatio="16:9"
-            src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/20250227_112513-fBYoynS3aWiYOiFUy1z7ZR1uCBUG6o.jpg"
+            src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/DEVWORLD2025/003-conf1-OuRntj879zhiacsnjyJyBD0L16p7zD.jpg"
           />
           <Card.HeadingGroup tagline="Conference">
             <Heading level={2} size="level-3">
@@ -79,7 +79,7 @@ export default function Home() {
       <div className={styles.standardHeading}>
         <Heading level={3}>3D Kubus</Heading>
       </div>
-      <SwiperCube />
+      <HomeCube />
     </div>
   );
 }
