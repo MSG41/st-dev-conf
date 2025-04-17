@@ -57,7 +57,7 @@ export default function Home() {
           <Image
             alt=""
             aspectRatio="16:9"
-            src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/AiOnTheAmstel-26Feb2025/20250226_174021-6YnwwqLItwTyTDeEGgxQeN8jw7zERp.jpg"
+            src="https://zznqketqz3cgxck6.public.blob.vercel-storage.com/AiOnTheAmstel-26Feb2025/001-8ioEa6iZVK6EmWDnKSlsG7DZbjEomz.jpg"
           />
           <Card.HeadingGroup tagline="Meetup">
             <Heading level={2} size="level-3">

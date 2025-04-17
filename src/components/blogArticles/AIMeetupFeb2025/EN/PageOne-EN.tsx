@@ -7,7 +7,8 @@ import {
   UnorderedList,
 } from '@amsterdam/design-system-react';
 import styles from '../../../../App.module.scss';
-import { AIOTAImages } from '../AIOTAImages';
+import { AIOTACube } from '../AIOTAImages';
+
 
 export default function PageOneEn() {
   return (
@@ -21,7 +22,7 @@ export default function PageOneEn() {
       <Paragraph size="small">🗓 Date: 26 FEB 2025.</Paragraph>
 
       <br />
-      <AIOTAImages />
+      <AIOTACube />
       <br />
       <Spotlight className={styles.customBlockquote}>
         <Grid paddingVertical="medium">

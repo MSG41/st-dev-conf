@@ -1,4 +1,4 @@
-import SwiperCube2 from '../../animatedComponents/swiperCube/swiperCube';
+import SwiperCube from '../../animatedComponents/swiperCube/swiperCube';
 
 export const DEVWorldImages = () => {
   const devWorldImages = [
@@ -72,5 +72,5 @@ export const DEVWorldImages = () => {
     },
   ];
 
-  return <SwiperCube2 images={devWorldImages} />;
+  return <SwiperCube images={devWorldImages} />;
 };
