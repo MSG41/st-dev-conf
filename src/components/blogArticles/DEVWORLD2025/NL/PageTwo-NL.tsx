@@ -58,7 +58,9 @@ export default function PageTwo() {
           wordt ingezet voor software-internationalisatie, duurzame software en
           AI-implementaties. Toen ik mijn ervaring bij de gemeente vertelde en
           ons project {'\u00A0'}
-          <Link href="https://bomen.amsterdam.nl/">De Bomenkaart </Link>
+          <Link target="_blank" href="https://bomen.amsterdam.nl/">
+            De Bomenkaart
+          </Link>
           {'\u00A0'} toonde, reageerden veel mensen met oprechte interesse en
           waardering. 🌳
         </Paragraph>

@@ -58,7 +58,9 @@ export default function PageTwoEn() {
           for software internationalization, sustainable software, and AI
           implementations. When I shared my experience at the municipality and
           showed our project{' '}
-          <Link href="https://bomen.amsterdam.nl/">De Bomenkaart </Link>
+          <Link target="_blank" href="https://bomen.amsterdam.nl/">
+            De Bomenkaart
+          </Link>
           {'\u00A0'} many people responded with genuine interest and
           appreciation. 🌳
         </Paragraph>
