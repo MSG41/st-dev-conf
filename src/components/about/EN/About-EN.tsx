@@ -1,4 +1,8 @@
-import { Accordion, Paragraph, Mark, Link } from '@amsterdam/design-system-react';
+import {
+  Accordion,
+  Paragraph,
+  Link,
+} from '@amsterdam/design-system-react';
 
 import styles from '../../../App.module.scss';
 
@@ -24,9 +28,8 @@ export default function AboutEn() {
               future, it’s nice to have everything in one place for easy
               reference. Additionally, this blog gives me the perfect
               opportunity to work with the thoughtfully designed Amsterdam
-              Design System
-              <Mark>—hats off to the talented team behind it!</Mark> It’s been a
-              truly enjoyable experience to use it in this context.
+              Design System. It’s been a truly enjoyable experience to use it in
+              this context.
             </Paragraph>
           </Accordion.Section>
           <Accordion.Section label="This blog as open-source github repository">

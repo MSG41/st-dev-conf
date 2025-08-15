@@ -1,10 +1,14 @@
-import { Accordion, Link, Mark, Paragraph } from '@amsterdam/design-system-react';
+import {
+  Accordion,
+  Link,
+  Paragraph,
+} from '@amsterdam/design-system-react';
 import styles from '../../../App.module.scss';
 
 export default function About() {
   return (
     <div className={styles.aboutContainer}>
-       <div className={styles.accordion}>
+      <div className={styles.accordion}>
         <Accordion headingLevel={1}>
           <Accordion.Section label="Wie ben ik?">
             <Paragraph>
@@ -22,10 +26,7 @@ export default function About() {
               conferenties op één plek terug te kunnen vinden in een
               persoonlijke omgeving. Daarnaast biedt deze blog me de perfecte
               kans om te werken met het doordacht ontworpen Amsterdam Design
-              System
-              <Mark>
-                —petje af voor het getalenteerde team achter dit systeem!
-              </Mark>
+              System.
               {''} Het is een echt plezier om het in deze context te gebruiken.
             </Paragraph>
           </Accordion.Section>
