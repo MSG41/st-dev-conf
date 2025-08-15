@@ -9,6 +9,9 @@ import Home from './components/blogArticles/homePage/NL/Home-NL';
 import About from './components/about/NL/About-NL';
 import AboutEn from './components/about/EN/About-EN';
 import PageOne from './components/blogArticles/AIMeetupFeb2025/NL/PageOne-NL';
+import PageThree from './components/blogArticles/AIMeetupJul2025/NL/PageThree-NL';
+import PageThreeEn from './components/blogArticles/AIMeetupJul2025/EN/PageThree-EN';
+
 import PageTwo from './components/blogArticles/DEVWORLD2025/NL/PageTwo-NL';
 import HomeEn from './components/blogArticles/homePage/EN/Home-EN';
 import PageOneEn from './components/blogArticles/AIMeetupFeb2025/EN/PageOne-EN';
@@ -24,6 +27,7 @@ import styles from './App.module.scss';
 import ErrorPage from './components/animatedComponents/404/errorPage';
 import Logo from './components/logo/Logo';
 import ThemeToggle from './components/themeToggle/ThemeToggle';
+
 
 const closeMenu = () => {
   const button = document.querySelector(
@@ -164,7 +168,7 @@ function Layout() {
               handleTranslate();
             }}
           >
-            {isEnglish ? 'Terug naar Nederlands' : 'Translate to English'}
+            {isEnglish ? 'Terug naar Nederlands 🇳🇱' : 'Translate to English 🇬🇧'}
           </Header.MenuLink>,
         ]}
       >
@@ -179,7 +183,7 @@ function Layout() {
                   handleTranslate();
                 }}
               >
-                {isEnglish ? 'Terug naar Nederlands' : 'Translate to English'}
+                {isEnglish ? 'Terug naar Nederlands 🇳🇱' : 'Translate to English 🇬🇧'}
               </LinkList.Link>
             </LinkList>
           </Header.GridCellNarrowWindowOnly>
@@ -205,9 +209,11 @@ const router = createBrowserRouter([
       { path: '/about', element: <About /> },
       { path: '/en/about', element: <AboutEn /> },
       { path: '/ai-meetup', element: <PageOne /> },
+      { path: '/ai-meetup-jul2025', element: <PageThree /> },
       { path: '/devworld2025', element: <PageTwo /> },
       { path: '/en', element: <HomeEn /> },
       { path: '/en/ai-meetup', element: <PageOneEn /> },
+      { path: '/en/ai-meetup-jul2025', element: <PageThreeEn /> },
       { path: '/en/devworld2025', element: <PageTwoEn /> },
       { path: '*', element: <ErrorPage /> },
     ],

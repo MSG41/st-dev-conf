@@ -28,7 +28,7 @@ export default function PageOneEn() {
         <Grid paddingVertical="medium">
           <Grid.Cell span="all">
             <Blockquote>
-              🤖 This is the year of agentic AI. We are not in the loop – we are
+              🤖 This is the year of agentic AI. We are not in the loop: we are
               looped in!
             </Blockquote>
             <Paragraph size="small">Ioannis Zempekakis</Paragraph>
@@ -40,7 +40,7 @@ export default function PageOneEn() {
       <section>
         <Paragraph>
           This edition focused on the challenges of building and implementing
-          <strong> agentic AI</strong> – systems that can take action
+          <strong> agentic AI</strong>: systems that can take action
           autonomously.
         </Paragraph>
         <br />
@@ -52,15 +52,15 @@ export default function PageOneEn() {
 
         <UnorderedList>
           <UnorderedList.Item>
-            <strong>Ioannis Zempekakis</strong> – Director of AI & Data Science
+            <strong>Ioannis Zempekakis</strong>: Director of AI & Data Science
             at Prosus Group.
           </UnorderedList.Item>
           <UnorderedList.Item>
-            <strong>Khashayar Mansouri</strong> – CEO of Starnus, a tech startup
+            <strong>Khashayar Mansouri</strong>: CEO of Starnus, a tech startup
             specialized in agentic AI.
           </UnorderedList.Item>
           <UnorderedList.Item>
-            <strong>Joseph Groot Kormelink</strong> – Managing Director at AI
+            <strong>Joseph Groot Kormelink</strong>: Managing Director at AI
             Heroes, active in AI consulting and startups.
           </UnorderedList.Item>
         </UnorderedList>
