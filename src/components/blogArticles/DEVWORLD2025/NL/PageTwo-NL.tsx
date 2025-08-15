@@ -15,7 +15,7 @@ export default function PageTwo() {
   return (
     <div className={styles.blogContainer}>
       <Heading level={2}>
-        DEVWORLD 2025 – Technologie, Innovatie & Netwerken
+        DEVWORLD 2025: Technologie, Innovatie & Netwerken
       </Heading>
       <br />
       <Paragraph size="small">🎤 Gehost door: Amsterdam RAI</Paragraph>
@@ -49,7 +49,7 @@ export default function PageTwo() {
           LLM-implementaties en DevOps-innovatie. Ik ging naar DEVWorld 2025 om
           te kijken hoe andere professionals werken en met welke projecten zij
           bezig zijn. Het was een internationale setting waarin iedereen Engels
-          sprak – een fijne ervaring.
+          sprak, een fijne ervaring.
         </Paragraph>
         <br />
 
@@ -151,7 +151,7 @@ export default function PageTwo() {
           kreeg een duidelijker beeld van hoe vector databases en
           AI-toepassingen in de praktijk worden ingezet. De presentatie van
           Bright Data over het scrapen van data om AI-modellen te voeden vond ik
-          ook erg interessant — dit zou iets kunnen zijn voor de gemeente om
+          ook erg interessant, dit zou iets kunnen zijn voor de gemeente om
           eigen AI-agenten te trainen met relevante data.
         </Paragraph>
         <br />

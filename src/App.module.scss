@@ -1,5 +1,49 @@
 @use './styles/media-queries' as media;
+// Home page controls (search + sort)
+.homePageControls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
 
+.searchInput {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--card-border);
+  font-size: 1rem;
+  background: var(--card-background);
+  color: var(--text-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  width: 220px;
+  outline: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.searchInput:focus {
+  border-color: var(--accent-color);
+}
+
+.sortButton {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--card-border);
+  background: var(--card-background);
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  transition: background 0.2s, border-color 0.2s;
+  color: var(--text-color);
+}
+.sortButton:hover {
+  background: var(--accent-color);
+  color: #fff;
+  border-color: var(--accent-color);
+}
+.updateCountNumber {
+  color: #1ec94c;
+  font-weight: bold;
+}
 /* --------------------------------------
  * LAYOUT & STRUCTURE
  * -------------------------------------- */

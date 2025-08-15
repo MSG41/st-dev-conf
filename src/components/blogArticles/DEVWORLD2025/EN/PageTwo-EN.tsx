@@ -15,7 +15,7 @@ export default function PageTwoEn() {
   return (
     <div className={styles.blogContainer}>
       <Heading level={2}>
-        DEVWORLD 2025 – Technology, Innovation & Networking
+        DEVWORLD 2025: Technology, Innovation & Networking
       </Heading>
       <br />
       <Paragraph size="small">🎤 Hosted by: Amsterdam RAI</Paragraph>
@@ -72,29 +72,29 @@ export default function PageTwoEn() {
         <br />
         <UnorderedList>
           <UnorderedList.Item>
-            <strong>"Beyond Code: Building a Thriving Tech Community"</strong> –
+            <strong>"Beyond Code: Building a Thriving Tech Community"</strong>:
             Tina Tran (ING)
           </UnorderedList.Item>
           <UnorderedList.Item>
             <strong>"Benefits of Using ING API SDK for Java Developers"</strong>{' '}
-            – Lokesh Haralakatta (ING)
+            : Lokesh Haralakatta (ING)
           </UnorderedList.Item>
           <UnorderedList.Item>
             <strong>
               "Insights on Software Internationalization & NIO’s Smart Vehicle
               Tech"
             </strong>{' '}
-            – Dominique Massonié (NIO)
+            : Dominique Massonié (NIO)
           </UnorderedList.Item>
           <UnorderedList.Item>
-            <strong> "Future of AI Panel"</strong> – Bob van Luijt (Weaviate) &
+            <strong> "Future of AI Panel"</strong> : Bob van Luijt (Weaviate) &
             Steve Sewell (Builder.io)
           </UnorderedList.Item>
           <UnorderedList.Item>
             <strong>
               "Gain More Confidence in Your Code with Mutation Testing"
             </strong>{' '}
-            – Simone Romani (ING)
+            : Simone Romani (ING)
           </UnorderedList.Item>
           <UnorderedList.Item>
             <strong>
@@ -102,36 +102,36 @@ export default function PageTwoEn() {
               "The Hidden Champions: How Booking.com Mentors Close Opportunity
               Gaps for Women in Tech"
             </strong>{' '}
-            – Natasha ten Cate & Floriana Zefi (Booking.com)
+            : Natasha ten Cate & Floriana Zefi (Booking.com)
           </UnorderedList.Item>
           <UnorderedList.Item>
             <strong>
               "Secure or Sorry: Your Software is Now a (European) Product"
             </strong>{' '}
-            – Daniel Thompson-Yvetot (CrabNebula Ltd.)
+            : Daniel Thompson-Yvetot (CrabNebula Ltd.)
           </UnorderedList.Item>
           <UnorderedList.Item>
-            <strong>"Will LLMs Really Consume the Internet?"</strong> – Ariel
+            <strong>"Will LLMs Really Consume the Internet?"</strong> : Ariel
             Shulman (Bright Data)
           </UnorderedList.Item>
           <UnorderedList.Item>
             <strong>
               "Is Passwordless the Future? Examining the Pros and Cons of FIDO2"
             </strong>{' '}
-            – Marc Cortada Beromeu & Alexandru-Madalin Ghenea (ING)
+            : Marc Cortada Beromeu & Alexandru-Madalin Ghenea (ING)
           </UnorderedList.Item>
           <UnorderedList.Item>
             <strong>
               "Build Your Custom Copilot with Microsoft Copilot Studio"
             </strong>{' '}
-            – Daniel Laskewitz (Microsoft)
+            : Daniel Laskewitz (Microsoft)
           </UnorderedList.Item>
           <UnorderedList.Item>
             <strong>
               "Engineering Leadership in Crisis: Rebuilding Trust, Technology,
               and Teamwork"
             </strong>{' '}
-            – Simon Hall (Payaut)
+            : Simon Hall (Payaut)
           </UnorderedList.Item>
         </UnorderedList>
         <br />
@@ -149,7 +149,7 @@ export default function PageTwoEn() {
           The Future of AI panel was also super insightful. I gained a clearer
           picture of how vector databases and AI deployments are being used
           across industries. Bright Data’s talk on scraping data to feed AI
-          models was a highlight—it’s something I could imagine the Municipality
+          models was a highlight, it’s something I could imagine the Municipality
           apply to train our own AI agents.
         </Paragraph>
         <br />
